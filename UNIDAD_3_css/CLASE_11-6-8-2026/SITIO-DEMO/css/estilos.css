@@ -1,0 +1,55 @@
+/*body:hover {
+    opacity: 1;
+}*/
+/*el 100% de tamaño de fuente indica al usuario configura por omision es de 16px*/
+html{
+    font-size: 100%;
+}
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+nav {
+    font-family: Arial, sans-serif;
+    background-color: #d3d0d0;
+    font-size: 1rem;
+    line-height: 1.6;
+    background-image: url(/UNIDAD_3_css/CLASE_11-6-8-2026/SITIO-DEMO/Recursos/fondo.jpg);
+    background-size: contain;
+}
+
+h1 {
+    color: rgb(255, 0, 128);
+    font-size: 32px;
+    text-align: center;
+    font-size: 2.5rem;
+    font-weight:bold;
+    transition: all 1s ease;
+}
+
+.destacado{
+    padding: 10px;
+    background-color: aqua;
+}
+
+h2{
+    font-size: 2rem;
+    font-weight: 700;
+}
+
+p{
+    font-size: 1rem;
+    font-weight: bold;
+}
+
+/*EL CH ES EL ANCHO DEL CARACTER CERO DE LA FUENTE EN USO. EL VLOR 70 MARCA RANGO DE LECTURA COMODA POR LINEA O RENGLON, MAR LARGA, LA VISTA SE PIERDE*/
+p{
+    max-width: 70ch;
+}
+
+h1:hover{
+    transform: scale(1.1);
+}

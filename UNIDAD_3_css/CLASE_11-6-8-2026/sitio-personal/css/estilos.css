@@ -4,6 +4,12 @@
     box-sizing: border-box;
 }
 
+/*el 100% de tamaño de fuente indica al usuario configura por omision es de 16px*/
+
+html{
+    font-size: 100%;
+}
+
 .header {
     display: flex;
     flex-direction: row;
@@ -11,6 +17,7 @@
     justify-content: space-between;
     padding: 0px 50px 0px 50px;
     align-items: center;
+    background-color: #79acf0;
 }
 
 header>nav>ul {
@@ -81,4 +88,34 @@ a{
 input:focus{
     background-color: rgb(194, 206, 243);
     color: #fff;
+}
+
+.sub-menu{
+    height: 0px;
+    position: absolute;
+    list-style-type: none;
+    padding-top: 10px;
+    overflow: hidden;
+}
+
+.sub-menu li{
+    margin-top: 8px;
+}
+
+.sub-menu li::after{
+    content: "";
+}
+
+.sub-menu2 li::after{
+    content: "";
+}
+
+.sub-menu-visto:hover .sub-menu {
+    height: 110px;
+    transition: all 0.5s ease;
+    background-color: #79acf0;
+    text-align: center;
+    padding: 0px 10px 0px 10px;
+    border-radius: 0px 0px 10px 10px;
+    box-shadow: 5px 5px 5px #000;
 }
