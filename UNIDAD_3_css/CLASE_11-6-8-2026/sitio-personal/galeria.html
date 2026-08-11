@@ -11,21 +11,30 @@
         <meta name="viewport" content="width=device-width, initial-scale=1">
         <meta name="author" content="Greivin Montero Contretras">
         <link rel="icon" href="recursos/favicon.png" type="image/png">
+        <link rel="stylesheet" href="css/estilos.css">
     </head>
 
 
     <body>
         <!-- Encabezado del sitio web -->
-        <header id="header">
-            <h1>React</h1>
-            <nav>
-                <ul>
-                    <li><a href="index.html">Inicio</a></li>
-                    <li><a href="contacto.html">Contacto</a></li>
-                    <li><a href="galeria.html">Galeria</a></li>
-                    <li><a href="listas.html">Lista</a></li>
-                </ul>
-            </nav>
+        <header class="header">
+            <h1><img src="recursos/react-logo.png" alt="logo de react" width="150px" height="80px"></h1>
+                <nav>
+                    <ul class="sub-menu">
+                        <li class="hover boton-menu"><a href="index.html">Inicio</a></li>
+                        <li class="hover boton-menu"><a href="contacto.html">Contacto</a></li>
+                        <li class="hover boton-menu"><a href="galeria.html">Galeria</a></li>
+                        <li class="hover boton-menu"><a href="listas.html">Lista</a></li>
+                        <li class="hover boton-menu"><a href="">Documentacion</a>
+                            <ul>
+                                <li><a href="">Componentes</a></li>
+                                <li><a href="">UseState</a></li>
+                                <li><a href="">ReactRouter</a></li>
+                                <li><a href="">States</a></li>
+                            </ul>
+                        </li>
+                    </ul>
+                </nav>
         </header>
         <!-- Contenido principal del sitio web -->
         <main id="main">

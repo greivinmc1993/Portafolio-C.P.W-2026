@@ -6,10 +6,6 @@
 
 /*el 100% de tamaño de fuente indica al usuario configura por omision es de 16px*/
 
-html{
-    font-size: 100%;
-}
-
 .header {
     display: flex;
     flex-direction: row;
@@ -17,35 +13,17 @@ html{
     justify-content: space-between;
     padding: 0px 50px 0px 50px;
     align-items: center;
-    background-color: #79acf0;
 }
 
-header>nav>ul {
+nav>ul {
     display: flex;
     flex-direction: row;
     list-style-type: none;
-    gap: 10px;
 }
 
-li::after{
-    content: " |";
-}
-
-li:last-child::after{
-    content: "";
-}
-
-header>nav>ul>li {
-    display: block;
-}
-
-header>nav>ul>li:hover {
+.hover:hover {
     transition: all 0.5s ease;
     transform: scale(1.1);
-}
-
-a:hover{
-    border-bottom: 1px solid black;
 }
 
 table {
@@ -69,53 +47,71 @@ table {
 
 body{
     font-family: Arial, Helvetica, sans-serif;
-    background-color: #f9f9f9;
-    color: #333;
-}
-
-p{
-    line-height: 1.1;
-
-    padding: 0 1em;
-}
-
-a{
-    text-decoration: none;
-    color: rgb(0, 0, 0);
+    background-color: rgb(35 39 47);
+    font-size: 100%;
+    font-family: Optimistic Display, -apple-system, ui-sans-serif, system-ui, sans-serif, Apple Color Emoji, Segoe UI Emoji, Segoe UI Symbol, Noto Color Emoji;
     text-align: center;
+    color: #f9f9f9;
+}
+
+section{
+    margin: 30px auto;
+}
+
+hr{
+    margin: 1rem auto;
+}
+
+main nav ul{
+    justify-content: center;
+    margin: 20px auto;
+}
+
+.boton-menu a{
+    text-decoration: none;
+    color:#fff;
+    text-align: center;
+    padding: 10px 10px;
+}
+
+a:hover{
+    background-color: #44576a;
+    color: #6ac3de;
+    border-radius: 18px;
+    border: none;
 }
 
 input:focus{
     background-color: rgb(194, 206, 243);
-    color: #fff;
 }
 
-.sub-menu{
+.sub-menu ul{
     height: 0px;
     position: absolute;
     list-style-type: none;
     padding-top: 10px;
     overflow: hidden;
+    border: none;
+    margin-top: 10px;
+    background-color: rgba(35, 39, 47, 0.26);
 }
 
-.sub-menu li{
-    margin-top: 8px;
-}
-
-.sub-menu li::after{
-    content: "";
-}
-
-.sub-menu2 li::after{
-    content: "";
-}
-
-.sub-menu-visto:hover .sub-menu {
-    height: 110px;
+.sub-menu li:hover ul{
+    height: 175px;
     transition: all 0.5s ease;
-    background-color: #79acf0;
     text-align: center;
-    padding: 0px 10px 0px 10px;
-    border-radius: 0px 0px 10px 10px;
-    box-shadow: 5px 5px 5px #000;
+}
+
+.sub-menu li:hover ul>li{
+    margin-bottom: 20px;
+}
+
+.listas{
+    border: 0.5px solid #838282;
+    text-align: left;
+    padding: 4rem;
+    max-width: 60rem;
+    background-color: #373d49;
+    border-radius: 10px;
+    margin: 2rem auto;
 }

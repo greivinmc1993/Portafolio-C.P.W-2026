@@ -19,18 +19,26 @@
         <!-- Encabezado del sitio web -->
         <header class="header">
             <h1><img src="recursos/react-logo.png" alt="logo de react" width="150px" height="80px"></h1>
-            <nav>
-                <ul>
-                    <li><a href="index.html">Inicio </a></li>
-                    <li><a href="contacto.html">Contacto </a></li>
-                    <li><a href="galeria.html">Galeria </a></li>
-                    <li><a href="listas.html">Lista</a></li>
-                </ul>
-            </nav>
+                <nav>
+                    <ul class="sub-menu">
+                        <li class="hover boton-menu"><a href="index.html">Inicio</a></li>
+                        <li class="hover boton-menu"><a href="contacto.html">Contacto</a></li>
+                        <li class="hover boton-menu"><a href="galeria.html">Galeria</a></li>
+                        <li class="hover boton-menu"><a href="listas.html">Lista</a></li>
+                        <li class="hover boton-menu"><a href="">Documentacion</a>
+                            <ul>
+                                <li><a href="">Componentes</a></li>
+                                <li><a href="">UseState</a></li>
+                                <li><a href="">ReactRouter</a></li>
+                                <li><a href="">States</a></li>
+                            </ul>
+                        </li>
+                    </ul>
+                </nav>
         </header>
         <!-- Contenido principal del sitio web -->
         <main id="main">
-            <article>
+            <article class="listas">
                 <h2>Inscripción al Bootcamp de React</h2>
                 <p>Complete el siguiente formulario para registrarse en la próxima cohorte del curso de desarrollo front-end.</p>
 

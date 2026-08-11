@@ -12,6 +12,7 @@
         <meta name="author" content="Greivin Montero Contretras">
         <link rel="icon" href="recursos/favicon.png" type="image/png">
         <link rel="stylesheet" href="css/estilos.css">
+        
     </head>
 
 
@@ -20,13 +21,13 @@
         <header class="header">
             <h1><img src="recursos/react-logo.png" alt="logo de react" width="150px" height="80px"></h1>
                 <nav>
-                    <ul>
-                        <li><a href="index.html">Inicio</a></li>
-                        <li><a href="contacto.html">Contacto</a></li>
-                        <li><a href="galeria.html">Galeria</a></li>
-                        <li><a href="listas.html">Lista</a></li>
-                        <li class="sub-menu-visto"><a href="">Documentacion</a>
-                            <ul class="sub-menu">
+                    <ul class="sub-menu">
+                        <li class="hover boton-menu"><a href="index.html">Inicio</a></li>
+                        <li class="hover boton-menu"><a href="contacto.html">Contacto</a></li>
+                        <li class="hover boton-menu"><a href="galeria.html">Galeria</a></li>
+                        <li class="hover boton-menu"><a href="listas.html">Lista</a></li>
+                        <li class="hover boton-menu"><a href="">Documentacion</a>
+                            <ul>
                                 <li><a href="">Componentes</a></li>
                                 <li><a href="">UseState</a></li>
                                 <li><a href="">ReactRouter</a></li>
@@ -38,32 +39,34 @@
         </header>
         <!-- Contenido principal del sitio web -->
         <main id="main">
-            
+            <h1>React: Una revolución en el desarrollo web</h1>
             <nav>
-                <h2>Índice</h2>
-                <ul class="sub-menu2">
-                    <li><a href="#react">React</a></li>
-                    <li><a href="#historia">Historia</a></li>
-                    <li><a href="#ventajas">Ventajas</a></li>
-                    <li><a href="#filosofia-react">Filosofía de React</a></li>
+                <ul>
+                    <li class="boton-menu"><a href="#react">React</a></li>
+                    <li class="boton-menu"><a href="#historia">Historia</a></li>
+                    <li class="boton-menu"><a href="#ventajas">Ventajas</a></li>
+                    <li class="boton-menu"><a href="#filosofia-react">Filosofía de React</a></li>
                 </ul>
             </nav>
             <hr>
             <article>
                 <h2>React: Una revolución en el desarrollo web</h2>
-                <section id="react">
+                <section id="react" class="listas">
                     <h3>React</h3>
                         <p>
                             <strong>React</strong> es una biblioteca de JavaScript de código abierto diseñada para construir interfaces de usuario, creada inicialmente por el ingeniero Jordan Walke en Facebook y lanzada en 2013. Su llegada revolucionó la forma en que se construyen las aplicaciones web al introducir un paradigma declarativo. En lugar de que el programador manipule manualmente cada elemento de la página, simplemente describe cómo debería verse la interfaz visual según el estado de la información, y React se encarga de actualizar la pantalla de manera eficiente cada vez que los datos cambian.
                         </p>
+                        <br>
 
                         <p>
                             La arquitectura de esta herramienta se basa fundamentalmente en la creación de <strong>componentes reutilizables.</strong> Estos actúan como bloques de construcción independientes que contienen su propia lógica y estructura, lo que facilita enormemente el mantenimiento y la escalabilidad de proyectos complejos. Para lograr su alto rendimiento, React utiliza un <strong>Virtual DOM</strong> (una representación ligera de la página en la memoria de la computadora); esto le permite calcular y aplicar únicamente los cambios mínimos y estrictamente necesarios en el navegador web, logrando aplicaciones sumamente rápidas y fluidas.
                         </p>
+                        <br>
 
                         <p>
                             Más allá de sus características técnicas, React ha generado un profundo <strong>impacto cultural</strong> dentro de la comunidad de programación mundial. Su filosofía ayudó a estandarizar el desarrollo <em>front-end moderno</em>, impulsando a toda una generación de creadores a cambiar su forma de pensar, diseñar y estructurar los proyectos digitales. Hoy en día, no solo cuenta con un gigantesco ecosistema de herramientas y librerías que giran a su alrededor, sino que se ha consolidado como un pilar de la industria que dicta las bases de cómo interactuamos con la web.
                         </p>
+                        <br>
 
                         <p>
                             React es una herramienta especializada en la creación de <abbr title="User Interface (Interfaz de Usuario)">UI</abbr> complejas e interactivas. Para lograr su velocidad característica, no manipula directamente la página, sino que utiliza un <abbr title="Document Object Model (Modelo de Objetos del Documento)">DOM</abbr> virtual para calcular los cambios antes de mostrarlos en la pantalla.
@@ -71,7 +74,7 @@
 
                 </section>
 
-                <section id="historia">
+                <section id="historia" class="listas">
                     <h3>React Historia</h3>
                         <p>La Línea de Tiempo de React
                         2011 - El problema en Facebook: A medida que la plataforma de anuncios de Facebook crecía, su interfaz de usuario se volvió increíblemente compleja y difícil de mantener. Para solucionar los constantes errores de sincronización en la pantalla, Jordan Walke, un ingeniero de la compañía, creó un prototipo llamado "FaxJS". Esta fue la primera versión no oficial de lo que hoy conocemos como React.
@@ -102,19 +105,33 @@
                         </p>
                 </section>
 
-                <section id="ventajas">
+                <section id="ventajas" class="listas">
                     <h3>React Ventajas</h3>
                         <p>React ofrece varias ventajas que lo hacen popular entre los desarrolladores:</p>
+                        <br>
                         <ul>
-                            <li>Componentes reutilizables: Los desarrolladores pueden crear componentes independientes que se pueden reutilizar en diferentes partes de la aplicación.</li>
-                            <li>Virtual DOM: React utiliza un Virtual DOM para mejorar el rendimiento al actualizar solo las partes necesarias de la interfaz de usuario.</li>
-                            <li>Unidireccionalidad de datos: React sigue un flujo de datos unidireccional, lo que facilita el seguimiento del estado de la aplicación.</li>
-                            <li>JSX: React utiliza JSX, una sintaxis que permite escribir código similar a HTML dentro de JavaScript, lo que facilita la creación de componentes.</li>
+                            <li>
+                                Componentes reutilizables: Los desarrolladores pueden crear componentes independientes que se pueden reutilizar en diferentes partes de la aplicación.
+                                <br><br>
+                            </li>
+
+                            <li>
+                                Virtual DOM: React utiliza un Virtual DOM para mejorar el rendimiento al actualizar solo las partes necesarias de la interfaz de usuario.
+                                <br><br>
+                            </li>
+                            <li>
+                                Unidireccionalidad de datos: React sigue un flujo de datos unidireccional, lo que facilita el seguimiento del estado de la aplicación.
+                                <br><br>
+                            </li>
+                            <li>
+                                JSX: React utiliza JSX, una sintaxis que permite escribir código similar a HTML dentro de JavaScript, lo que facilita la creación de componentes.
+                                <br><br>
+                            </li>
                         </ul>
 
                 </section>
 
-                <section id="filosofia-react">
+                <section id="filosofia-react" class="listas">
                     <h3>La Filosofía de React</h3>
                         <p>
                             El cambio de mentalidad es fundamental al aprender esta biblioteca. De hecho, el equipo de desarrollo afirma que <q>React te hace pensar en componentes</q>, lo cual significa que en lugar de ver una página web como un solo documento gigante, debes empezar a verla como un rompecabezas formado por pequeñas piezas independientes.
