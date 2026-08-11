@@ -265,22 +265,22 @@ Portafolio-Codificación de Páginas Web/
             <td>S13</td>
             <td>Tipografía y color</td>
             <td align="left">Dato</td>
-            <td><a href="/UNIDAD_3_css/CLASE_11-6-8-2026/sitio-personal/index.html" target="_blank" rel="noopener">Ver</a></td>
+            <td><a href="UNIDAD_3_css/CLASE_11-6-8-2026/sitio-personal/index.html" target="_blank" rel="noopener">Ver</a></td>
             <td><a href="RECURSOS/CLASE-13-10-8-2026.png" target="_blank" rel="noopener">Ver</a></td>
         </tr>
         <tr align="center">
             <td>S14</td>
             <td>Modelo de cajas</td>
             <td align="left">Dato</td>
-            <td><a href="unidad-03/" target="_blank" rel="noopener">Ver</a></td>
-            <td><a href="unidad-03/" target="_blank" rel="noopener">Ver</a></td>
+            <td><a href="UNIDAD_3_css/CLASE_11-6-8-2026/sitio-personal/listas.html" target="_blank" rel="noopener">Ver</a></td>
+            <td><a href="RECURSOS/CLASE-14-11-8-2026.png" target="_blank" rel="noopener">Ver</a></td>
         </tr>
         <tr align="center">
             <td>S15</td>
             <td>Display y posicionamiento</td>
             <td align="left">Dato</td>
-            <td><a href="unidad-03/" target="_blank" rel="noopener">Ver</a></td>
-            <td><a href="unidad-03/" target="_blank" rel="noopener">Ver</a></td>
+            <td><a href="UNIDAD_3_css/CLASE_11-6-8-2026/sitio-personal/index.html" target="_blank" rel="noopener">Ver</a></td>
+            <td><a href="RECURSOS/CLASE-15-11-8-2026.png" target="_blank" rel="noopener">Ver</a></td>
         </tr>
         <tr align="center">
             <td>S16</td>
