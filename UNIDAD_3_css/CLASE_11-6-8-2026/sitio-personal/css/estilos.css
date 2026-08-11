@@ -20,11 +20,6 @@ nav>ul {
     list-style-type: none;
 }
 
-.hover:hover {
-    transition: all 1s ease;
-    transform: scale(1.1);
-}
-
 table {
     max-width: 60rem;
     border: 1px solid #838282;
@@ -101,7 +96,6 @@ nav a:hover{
     background-color: #44576a;
     color: #6ac3de;
     border-radius: 18px;
-    border: none;
 }
 
 input:focus{
@@ -166,3 +160,10 @@ footer{
     transform: scale(0.8);
     transition: all 0.2s ease;
 }
+
+.activo{
+    background-color: #44576a;
+    color: #6ac3de;
+    border-radius: 18px;
+}
+
