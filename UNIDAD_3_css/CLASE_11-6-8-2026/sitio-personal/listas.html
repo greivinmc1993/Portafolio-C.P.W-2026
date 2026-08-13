@@ -17,17 +17,17 @@
 
     <body>
         <!-- Encabezado del sitio web -->
-        <header class="header">
-            <h1><img src="recursos/react-logo.png" alt="logo de react" width="150px" height="80px"></h1>
+        <header class="header" id="header">
+            <img src="recursos/react-logo.png" alt="logo de react" width="150px" height="80px">
                 <nav>
                     <ul class="sub-menu">
                         <li class=" boton-menu"><a href="index.html">Inicio</a></li>
                         <li class=" boton-menu"><a href="contacto.html">Contacto</a></li>
                         <li class=" boton-menu"><a href="galeria.html">Galeria</a></li>
-                        <li class=" boton-menu"><a class="activo" href="listas.html">Lista</a></li>
+                        <li class=" boton-menu activo"><a href="listas.html">Lista</a></li>
                         <li class=" boton-menu"><a href="">Documentacion</a>
                             <ul>
-                                <li><a href="">Componentes</a></li>
+                                <li><a href="https://es.react.dev/learn/installation" rel="noreferrer noopener" target="_blank">Intalación</a></li>
                                 <li><a href="">UseState</a></li>
                                 <li><a href="">ReactRouter</a></li>
                                 <li><a href="">States</a></li>
@@ -37,46 +37,56 @@
                 </nav>
         </header>
         <!-- Contenido principal del sitio web -->
+        
         <main id="main">
             <article>
                 <h2>Listas y Tablas Sobre React</h2>
+
+                <hr>
+
                 <p>En esta sección se presentan los conceptos fundamentales de React, así como las herramientas esenciales en su ecosistema, incluyendo una comparativa de librerías complementarias.</p>
                 <section class="listas">
                     <h3>5 Conceptos Fundamentales de React</h3><br>
                         <ul>
-                            <li><strong>Componentes:</strong> Son los bloques de construcción independientes y reutilizables que conforman la interfaz de usuario.</li><br>
-                            <li><strong>JSX:</strong> Es una extensión de sintaxis que permite escribir una estructura muy similar a HTML directamente dentro del código JavaScript.</li><br>
-                            <li><strong>Estado (State):</strong> Es un objeto interno que almacena datos dinámicos; cuando el estado cambia, React actualiza la pantalla automáticamente.</li><br>
-                            <li><strong>Props (Propiedades):</strong> Son argumentos de solo lectura que se envían de un componente padre a un componente hijo para pasar información.</li><br>
+                            <li><strong>Componentes:</strong> Son los bloques de construcción independientes y reutilizables que conforman la interfaz de usuario.</li>
+                            <li><strong>JSX:</strong> Es una extensión de sintaxis que permite escribir una estructura muy similar a HTML directamente dentro del código JavaScript.</li>
+                            <li><strong>Estado (State):</strong> Es un objeto interno que almacena datos dinámicos; cuando el estado cambia, React actualiza la pantalla automáticamente.</li>
+                            <li><strong>Props (Propiedades):</strong> Son argumentos de solo lectura que se envían de un componente padre a un componente hijo para pasar información.</li>
                             <li><strong>Hooks:</strong> Son funciones especiales (como <code>useState</code> o <code>useEffect</code>) que permiten usar el estado y el ciclo de vida de React sin necesidad de crear clases.</li>
                         </ul>
                 </section>
+
+                <hr class="separador">
 
                 <section id="herramientas-ecosistema" class="listas">
                     <h3>Top 5: Librerías esenciales en el ecosistema de React</h3><br>
                         <!-- Lo elegi para hacer una cuenta regresiva del peor a la mejor herramienta -->
                         <ol reversed>
-                            <li><strong>React Hook Form (Manejo de Formularios):</strong> Simplifica la validación y recolección de datos ingresados por el usuario, evitando que toda la página se recargue innecesariamente al escribir.</li><br>
-                            <li><strong>Jest & Testing Library (Pruebas Automáticas):</strong> Permiten simular clics y eventos del usuario para comprobar que el código funciona a la perfección antes de publicarlo.</li><br>
-                            <li><strong>Styled Components (Estilos Avanzados):</strong> Una herramienta que permite escribir código CSS puro directamente dentro de los archivos de JavaScript, evitando que los estilos choquen entre sí.</li><br>
-                            <li><strong>React Router (Navegación):</strong> Esencial para crear aplicaciones de una sola página (SPA). Permite cambiar de vistas o URLs sin que el navegador tenga que parpadear o recargarse.</li><br>
+                            <li><strong>React Hook Form (Manejo de Formularios):</strong> Simplifica la validación y recolección de datos ingresados por el usuario, evitando que toda la página se recargue innecesariamente al escribir.</li>
+                            <li><strong>Jest & Testing Library (Pruebas Automáticas):</strong> Permiten simular clics y eventos del usuario para comprobar que el código funciona a la perfección antes de publicarlo.</li>
+                            <li><strong>Styled Components (Estilos Avanzados):</strong> Una herramienta que permite escribir código CSS puro directamente dentro de los archivos de JavaScript, evitando que los estilos choquen entre sí.</li>
+                            <li><strong>React Router (Navegación):</strong> Esencial para crear aplicaciones de una sola página (SPA). Permite cambiar de vistas o URLs sin que el navegador tenga que parpadear o recargarse.</li>
                             <li><strong>Redux o Zustand (Estado Global):</strong> Resuelven el problema de tener que pasar información a través de muchísimos componentes, manteniendo los datos sincronizados en toda la aplicación.</li>
                         </ol>
                 </section>
+
+                <hr class="separador">
 
                 <section id="hooks-react" class="listas">
                     <h3>Hooks Principales de React</h3><br>
                         <dl>
                             <dt><strong>useState:</strong></dt>
-                            <dd>Permite añadir estado local a los componentes funcionales, desencadenando una <strong>actualización automática</strong> de la interfaz cuando los datos cambian.</dd><br>
+                            <dd>Permite añadir estado local a los componentes funcionales, desencadenando una <strong>actualización automática</strong> de la interfaz cuando los datos cambian.</dd>
                             
                             <dt><strong>useEffect:</strong></dt>
-                            <dd>Sirve para manejar operaciones externas (como llamadas a un servidor o temporizadores), aislándolas del ciclo de <em>renderizado principal</em>.</dd><br>
+                            <dd>Sirve para manejar operaciones externas (como llamadas a un servidor o temporizadores), aislándolas del ciclo de <em>renderizado principal</em>.</dd>
                             
                             <dt><strong>useContext:</strong></dt>
                             <dd>Facilita el acceso a datos globales en cualquier nivel de la aplicación, evitando la tediosa tarea de pasar las propiedades manualmente de padre a hijo.</dd>
                         </dl>
                 </section>
+
+                <hr class="separador">
 
                 <section id="ecosistema-herramientas" class="listas">
                     <h3>Clasificación de Herramientas en el Ecosistema React</h3><br>
@@ -109,6 +119,8 @@
                             </li>
                         </ul>
                 </section>
+
+                <hr>
 
                 <section id="comparativa-herramientas">
                     <h3>Tabla de Datos Compleja</h3>
@@ -190,14 +202,15 @@
 
         </main>
 
+        <hr>
+
         <!-- Pie de página del sitio web -->
         <footer id="footer">
             <address>
-                <b>San josé, Costa Rica. Teléfono:</b> +506 8888-8888 <br>
-                <a href="mailto:greivin.montero@correo.com">greivin.montero@correo.com</a> | 
+                <b>San josé, Costa Rica. Teléfono:</b> +506 8888-8888
+                <a href="mailto:greivin.montero@correo.com" class="enlaces">greivin.montero@correo.com</a> | 
+                <small>2026 - Todos los derechos reservados &copy; Greivin Montero Contretras</small>
             </address>
-
-            <p><small>2026 - Todos los derechos reservados &copy; Greivin Montero Contretras</small></p>
         </footer>
 
     </body>

@@ -17,17 +17,17 @@
 
     <body>
         <!-- Encabezado del sitio web -->
-        <header class="header">
-            <h1><img src="recursos/react-logo.png" alt="logo de react" width="150px" height="80px"></h1>
+        <header class="header" id="header">
+            <img src="recursos/react-logo.png" alt="logo de react" width="150px" height="80px">
                 <nav>
                     <ul class="sub-menu">
-                        <li class="hover boton-menu"><a href="index.html">Inicio</a></li>
-                        <li class="hover boton-menu"><a href="contacto.html">Contacto</a></li>
-                        <li class="hover boton-menu"><a href="galeria.html">Galeria</a></li>
-                        <li class="hover boton-menu"><a href="listas.html">Lista</a></li>
-                        <li class="hover boton-menu"><a href="">Documentacion</a>
+                        <li class=" boton-menu"><a href="index.html">Inicio</a></li>
+                        <li class=" boton-menu activo"><a href="contacto.html">Contacto</a></li>
+                        <li class=" boton-menu"><a href="galeria.html">Galeria</a></li>
+                        <li class=" boton-menu"><a href="listas.html">Lista</a></li>
+                        <li class=" boton-menu"><a href="">Documentacion</a>
                             <ul>
-                                <li><a href="">Componentes</a></li>
+                                <li><a href="https://es.react.dev/learn/installation" rel="noreferrer noopener" target="_blank">Intalación</a></li>
                                 <li><a href="">UseState</a></li>
                                 <li><a href="">ReactRouter</a></li>
                                 <li><a href="">States</a></li>
@@ -37,6 +37,8 @@
                 </nav>
         </header>
         <!-- Contenido principal del sitio web -->
+        <h1>Inscripción al Bootcamp de React</h1>
+        <hr>
         <main id="main">
             <article class="listas">
                 <h2>Inscripción al Bootcamp de React</h2>
@@ -97,6 +99,7 @@
                         <!-- C4: Valor mínimo, máximo y salto (step) -->
                             <label for="meses_experiencia">Meses de experiencia previa programando en JavaScript:</label><br>
                             <input type="number" id="meses_experiencia" name="estudiante_experiencia" min="0" max="60" step="1">
+                            <br><br>
 
                         <!-- Requerimiento B3: Opción única con mismo name pero distintos id -->
                             <p>Seleccione la modalidad de estudio:</p>
@@ -105,6 +108,7 @@
                             
                             <input type="radio" id="modalidad_asincrona" name="curso_modalidad" value="asincrono">
                             <label for="modalidad_asincrona">A tu propio ritmo (Asíncrono)</label>
+                            <br><br>
 
                         <!-- Casillas de verificación para marcar varias opciones -->
                             <p>Herramientas del ecosistema que te interesa profundizar:</p>
@@ -118,7 +122,7 @@
 
                         <!-- Campo de texto largo -->
                         <!-- C5: Límite de caracteres en el textarea -->
-                            <label for="expectativas_curso">¿Cuáles son tus expectativas para este curso? (Opcional):</label><br>
+                            <label for="expectativas_curso">¿Cuáles son tus expectativas para este curso? (Opcional):</label><br><br>
                             <textarea id="expectativas_curso" name="estudiante_expectativas" rows="4" cols="50" maxlength="400" placeholder="Escribe aquí hasta 400 caracteres..."></textarea>
                     </fieldset>
 
@@ -141,20 +145,20 @@
                 </form>
             </article>
 
-            <br><br>
-            
-            <a href="#header">Volver al inicio</a><br><br>
-
+        <div class="logo">
+            <a href="https://wa.me/+50672095376" title="whatsapp" rel="noopener noreferrer" target="_blank"><img src="recursos/logo.png" alt=""></a>
+        </div>
         </main>
+
+        <hr>
 
         <!-- Pie de página del sitio web -->
         <footer id="footer">
             <address>
-                <b>San josé, Costa Rica. Teléfono:</b> +506 8888-8888 <br>
-                <a href="mailto:greivin.montero@correo.com">greivin.montero@correo.com</a> | 
+                <b>San josé, Costa Rica. Teléfono:</b> +506 8888-8888
+                <a href="mailto:greivin.montero@correo.com" class="enlaces">greivin.montero@correo.com</a> | 
+                <small>2026 - Todos los derechos reservados &copy; Greivin Montero Contretras</small>
             </address>
-
-            <p><small>2026 - Todos los derechos reservados &copy; Greivin Montero Contretras</small></p>
         </footer>
 
     </body>
