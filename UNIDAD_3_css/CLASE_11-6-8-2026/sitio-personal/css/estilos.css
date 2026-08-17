@@ -199,3 +199,65 @@ button:hover{
     background-color: #44576a;
     color: #6ac3de;
 }
+
+.grid{
+    display: grid;
+    grid-column: repeat(2, 1fr);
+    grid-row: repeat(4, 1fr);
+    grid-template-areas: 
+    "item1 item2"
+    "item3 item4"
+    "item5 item6"
+    "item7 item7"
+    ;
+/*     gap: 50px; */
+    width: 70%;
+    margin: 20px auto;
+    border: 1px solid #fff;
+    grid-auto-columns: 50%;
+}
+
+.item1{
+    grid-area: item1;
+    align-content: center;
+    border: 1px solid #fff;
+}
+
+.item2{
+    grid-area: item2;
+    align-content: center;
+    border: 1px solid #fff;
+}
+
+.item3{
+    grid-area: item3;
+    align-content: center;
+    border: 1px solid #fff;
+}
+
+.item4{
+    grid-area: item4;
+    align-content: center;
+    justify-content: center;
+    border: 1px solid #fff;
+}
+
+.item5{
+    grid-area: item5;
+    align-content: center;
+    border: 1px solid #fff;
+    overflow: auto;
+}
+
+.item6{
+    grid-area: item6;
+    align-content: center;
+    border: 1px solid #fff;
+    text-align: center;
+}
+
+.item7{
+    grid-area: item7;
+    align-content: center;
+    border: 1px solid #fff;
+}

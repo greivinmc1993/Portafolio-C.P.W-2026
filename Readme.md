@@ -264,37 +264,37 @@ Portafolio-Codificación de Páginas Web/
         <tr align="center">
             <td>S13</td>
             <td>Tipografía y color</td>
-            <td align="left">Dato</td>
+            <td align="left">Aprendí a gestionar tipografía avanzada y unidades relativas (rem, em, %) para lograr diseños adaptables y accesibles. Definí jerarquías visuales con font-size, line-height y propiedades de texto. Además, apliqué sistemas de color (Hexadecimal, RGB, RGBA, HSL) y configuré fondos con background optimizando el contraste.</td>
             <td><a href="UNIDAD_3_css/CLASE_11-6-8-2026/sitio-personal/index.html" target="_blank" rel="noopener">Ver</a></td>
             <td><a href="RECURSOS/CLASE-13-10-8-2026.png" target="_blank" rel="noopener">Ver</a></td>
         </tr>
         <tr align="center">
             <td>S14</td>
             <td>Modelo de cajas</td>
-            <td align="left">Dato</td>
+            <td align="left">Aprendí a controlar el **modelo de cajas** (`content`, `padding`, `border` y `margin`) para estructurar y espaciar elementos. Con `box-sizing: border-box`, logré dimensiones predecibles incluyendo rellenos y bordes en el ancho total. Además, apliqué técnicas como `margin: 0 auto` para centrar contenedores y estilizar menús y tablas.</td>
             <td><a href="UNIDAD_3_css/CLASE_11-6-8-2026/sitio-personal/listas.html" target="_blank" rel="noopener">Ver</a></td>
             <td><a href="RECURSOS/CLASE-14-11-8-2026.png" target="_blank" rel="noopener">Ver</a></td>
         </tr>
         <tr align="center">
             <td>S15</td>
             <td>Display y posicionamiento</td>
-            <td align="left">Dato</td>
+            <td align="left">Aprendí a controlar el flujo de elementos mediante `display` (`block`, `inline`, `inline-block`, `none`) y a dominar el posicionamiento con `position` (`static`, `relative`, `absolute`, `fixed`, `sticky`). Usé coordenadas y `z-index` para superponer capas y estructuré barras de navegación fijas compensando el espacio con `padding-top` en el `body`.</td>
             <td><a href="UNIDAD_3_css/CLASE_11-6-8-2026/sitio-personal/index.html" target="_blank" rel="noopener">Ver</a></td>
             <td><a href="RECURSOS/CLASE-15-11-8-2026.png" target="_blank" rel="noopener">Ver</a></td>
         </tr>
         <tr align="center">
             <td>S16</td>
             <td>Flexbox</td>
-            <td align="left">Dato</td>
-            <td><a href="unidad-03/" target="_blank" rel="noopener">Ver</a></td>
-            <td><a href="unidad-03/" target="_blank" rel="noopener">Ver</a></td>
+            <td align="left">Aprendí a maquetar en un eje mediante Flexbox usando `display: flex` en contenedores. Controlé el eje principal con `justify-content` y el cruzado con `align-items`. Con `gap`, `flex-wrap` y `flex: 1`, logré centrado perfecto, menús horizontales y tarjetas flexibles que se reacomodan responsivamente.</td>
+            <td><a href="UNIDAD_3_css/CLASE_11-6-8-2026/sitio-personal/index.html" target="_blank" rel="noopener">Ver</a></td>
+            <td><a href="RECURSOS/CLASE16-13-8-2026.png" target="_blank" rel="noopener">Ver</a></td>
         </tr>
         <tr align="center">
             <td>S17</td>
             <td>CSS Grid</td>
-            <td align="left">Dato</td>
-            <td><a href="unidad-03/" target="_blank" rel="noopener">Ver</a></td>
-            <td><a href="unidad-03/" target="_blank" rel="noopener">Ver</a></td>
+            <td align="left">Aprendí a maquetar en dos dimensiones mediante **CSS Grid** (`display: grid`) estructurando filas y columnas simultáneamente. Usé la fracción `fr`, `gap`, `span` y `grid-template-areas` para diseñar *layouts*. Además, integré `repeat(auto-fit, minmax(...))` para galerías adaptables y combiné Grid con Flexbox según el nivel de diseño.</td>
+            <td><a href="UNIDAD_3_css/CLASE_11-6-8-2026/sitio-personal/galeria.html" target="_blank" rel="noopener">Ver</a></td>
+            <td><a href="RECURSOS/CLASE17-14-8-2026.png" target="_blank" rel="noopener">Ver</a></td>
         </tr>
         <tr align="center">
             <td>S18</td>

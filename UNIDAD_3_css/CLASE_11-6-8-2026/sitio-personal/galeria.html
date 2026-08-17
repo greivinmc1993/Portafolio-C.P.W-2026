@@ -17,7 +17,7 @@
 
     <body>
         <!-- Encabezado del sitio web -->
-        <header class="header">
+        <header class="header" id="header">
             <h1><img src="recursos/react-logo.png" alt="logo de react" width="150px" height="80px"></h1>
                 <nav>
                     <ul class="sub-menu">
@@ -37,38 +37,44 @@
                 </nav>
         </header>
         <!-- Contenido principal del sitio web -->
-        <main id="main">
 
-            <section id="galeria-curso">
-                <h2>Galería del Bootcamp de React</h2>
+        <main id="main">
+            <h2>Galería del Bootcamp de React</h2>
+                <div class="grid">
+                    <div class="item1">
+                        
 
                 <!-- Requerimiento A2: Imagen simple con sus 4 atributos (ruta, texto alternativo, ancho y alto real en píxeles) -->
-                    <h3>Logotipo</h3>
-                    <img src="recursos/react-logo.png" alt="Logotipo oficial de React" width="400" height="220">
+                            <h3>Logotipo</h3>
+                            <img src="recursos/react-logo.png" alt="Logotipo oficial de React" width="400" height="220">
+                    </div>
 
+                    <div class="item2">
                 <!-- Requerimiento A3: Imagen agrupada con su pie explicativo (figure y figcaption) -->
-                    <h3>Ambiente de Aprendizaje</h3>
-                    <figure>
-                        <img src="recursos/estudiantes.jpg" alt="Estudiante escribiendo código de componentes en un monitor" width="600" height="300">
-                        <figcaption>Un estudiante desarrollando su primer proyecto interactivo en clase.</figcaption>
-                    </figure>
-
+                        <h3>Ambiente de Aprendizaje</h3>
+                            <figure>
+                                <img src="recursos/estudiantes.jpg" alt="Estudiante escribiendo código de componentes en un monitor" width="600" height="300">
+                                <figcaption>Un estudiante desarrollando su primer proyecto interactivo en clase.</figcaption>
+                            </figure>
+                    </div>
                 <!-- Requerimiento A4: Imagen que ofrece varios formatos al navegador (picture, source y fallback img) -->
-                    <h3>Certificación Final</h3>
-                    <picture>
-                        <!-- Formato moderno alternativo 1 -->
-                        <source srcset="recursos/certificado.webp" width="760" height="540" type="image/webp">
 
-                        <!-- Formato moderno alternativo 2 -->
-                        <source srcset="recursos/certificado.avif" type="image/avif">
-                                                
-                        <!-- Imagen de respaldo obligatoria para navegadores antiguos -->
-                        <img src="recursos/certificado.webp" alt="Certificado oficial de finalización del curso de React" width="760" height="540">
-                    </picture>
-            </section>
+                    <div class="item3">
+                        <h3>Certificación Final</h3>
+                        <picture>
+                            <!-- Formato moderno alternativo 1 -->
+                            <source srcset="recursos/certificado.webp" width="760" height="540" type="image/webp">
+
+                            <!-- Formato moderno alternativo 2 -->
+                            <source srcset="recursos/certificado.avif" type="image/avif">
+                                                    
+                            <!-- Imagen de respaldo obligatoria para navegadores antiguos -->
+                            <img src="recursos/certificado.webp" alt="Certificado oficial de finalización del curso de React" width="760" height="540">
+                        </picture>
+                    </div>
 
             <!-- Requerimiento B1: Sección con su respectivo encabezado -->
-            <section id="audio-curso">
+            <div id="audio-curso" class="item4">
                 <h3>Opening de Caballeros Del Zodiaco</h3>
                 
                 <!-- Requerimiento B2: Etiqueta de audio con el atributo 'controls' -->
@@ -88,10 +94,10 @@
                     </p>
                     
                 </audio>
-            </section>
+            </div>
 
             <!-- Requerimiento C1: Sección con su respectivo encabezado -->
-            <section id="video-curso">
+            <div id="video-curso" class="item5">
                 <h3>Opening de Ranma 1/2</h3>
                 
                 <!-- Requerimiento C2: Atributos controls, width, poster (portada) y preload (precarga) -->
@@ -114,11 +120,11 @@
                     </p>
                     
                 </video>
-            </section>
+            </div>
 
             <br>
 
-            <section>
+            <div class="item6">
                 <h2>Gráfico Vectorial: Casa bajo el sol</h2>
 
                     <svg width="400" height="400" viewBox="0 0 400 400" xmlns="http://www.w3.org/2000/svg">
@@ -131,7 +137,7 @@
                         
                         <polygon points="100,200 200,100 300,200" fill="firebrick" />
                         
-                        <text x="200" y="380" font-family="Arial, sans-serif" font-size="16" fill="black" text-anchor="middle">
+                        <text x="200" y="380" font-family="Arial, sans-serif" font-size="16" fill="white" text-anchor="middle">
                         Ilustración vectorial
                         </text>
 
@@ -143,14 +149,14 @@
                     estructura principal de la vivienda y un polígono de tres vértices que simula un techo a dos aguas.
                 </p>
 
-            </section>
+            </div>
 
-            <section>
+            <div class="item7">
                 <h2>Gráfica 2: Popularidad de Lenguajes de Programación (Datos Reales)</h2>
 
                     <svg width="500" height="400" viewBox="0 0 500 400" xmlns="http://www.w3.org/2000/svg">
                         
-                        <text x="250" y="40" font-family="Arial, sans-serif" font-size="18" font-weight="bold" fill="#333" text-anchor="middle">
+                        <text x="250" y="40" font-family="Arial, sans-serif" font-size="18" font-weight="bold" fill="#fff" text-anchor="middle">
                         Uso de Lenguajes en 2023 (%)
                         </text>
 
@@ -164,13 +170,13 @@
                         
                         <rect x="350" y="228" width="50" height="72" fill="mediumpurple" />
 
-                        <text x="105" y="325" font-family="Arial, sans-serif" font-size="14" fill="black" text-anchor="middle">JS</text>
+                        <text x="105" y="325" font-family="Arial, sans-serif" font-size="14" fill="white" text-anchor="middle">JS</text>
                         
-                        <text x="195" y="325" font-family="Arial, sans-serif" font-size="14" fill="black" text-anchor="middle">Python</text>
+                        <text x="195" y="325" font-family="Arial, sans-serif" font-size="14" fill="white" text-anchor="middle">Python</text>
                         
-                        <text x="285" y="325" font-family="Arial, sans-serif" font-size="14" fill="black" text-anchor="middle">Java</text>
+                        <text x="285" y="325" font-family="Arial, sans-serif" font-size="14" fill="white" text-anchor="middle">Java</text>
                         
-                        <text x="375" y="325" font-family="Arial, sans-serif" font-size="14" fill="black" text-anchor="middle">C++</text>
+                        <text x="375" y="325" font-family="Arial, sans-serif" font-size="14" fill="white" text-anchor="middle">C++</text>
 
                     </svg>
 
@@ -179,8 +185,8 @@
                     Se construyó utilizando una etiqueta <code>&lt;line&gt;</code> para el eje base, cuatro etiquetas <code>&lt;rect&gt;</code> 
                     con diferentes alturas para representar los datos, y etiquetas <code>&lt;text&gt;</code> bajo cada barra para su correcta identificación.
                 </p>
-            </section>
-
+            </div>
+            </div>
 
             <br><br>
             
