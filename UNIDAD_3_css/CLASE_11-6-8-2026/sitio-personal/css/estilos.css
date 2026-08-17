@@ -43,6 +43,14 @@ caption{
     font-weight: bold;
 }
 
+thead th{
+    text-transform: uppercase;
+}
+
+tbody tr td:hover, tbody th:hover, tfoot:hover, thead tr th:hover{
+    background-color: #6ac3de;
+}
+
 th {
     padding: 15px;
     border: 1px solid #838282;
@@ -186,18 +194,29 @@ fieldset{
     padding: 0px 30px 15px 30px;
     border-radius: 18px;
     margin-top: 20px;
+    width: 100%;
 }
 
-button{
+.boton{
     background-color: #373d49;
     color: #fff;
     border-radius: 8px;
-    padding: 10px;
+    padding: 12px;
+    font-size: 1rem;
+    font-weight: bold;
+    margin: 0 10px;
 }
 
-button:hover{
+.boton:hover{
     background-color: #44576a;
     color: #6ac3de;
+}
+
+.boton:active{
+    background-color: #38536d;
+    color: white;
+    outline: 2px solid #38536d;
+    outline-offset: 2px;
 }
 
 .grid{
@@ -211,7 +230,7 @@ button:hover{
     "item7 item7"
     ;
 /*     gap: 50px; */
-    width: 70%;
+    width: 80%;
     margin: 20px auto;
     border: 1px solid #fff;
     grid-auto-columns: 50%;
@@ -260,4 +279,41 @@ button:hover{
     grid-area: item7;
     align-content: center;
     border: 1px solid #fff;
+}
+
+input[type="text"], input[type="email"], input[type="password"], input[type="number"], input[type="tel"],input[type="date"]{
+    width: 100%;
+    padding: 8px;
+    border-radius: 8px;
+    font-family: inherit;
+    transition: all 0.5s ease;
+    display: block;
+}
+
+input:focus{
+    width: 90%;
+}
+
+input[type="radio"]:focus{
+    display: inline-block;
+    background-color: #000;
+}
+
+textarea{
+    width: 100%;
+    transition: all 0.5s ease;
+}
+
+textarea:focus{
+    width: 90%;
+    background-color: rgb(194, 206, 243)
+}
+
+input:focus:invalid:not(:placeholder-shown){
+    background-color: rgba(250, 171, 171, 0.363);
+    color: white;
+}
+
+input:focus:valid:not(:placeholder-shown){
+    background-color: rgb(190, 250, 190);
 }

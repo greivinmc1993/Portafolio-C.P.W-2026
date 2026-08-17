@@ -300,8 +300,8 @@ Portafolio-Codificación de Páginas Web/
             <td>S18</td>
             <td>Componentes estilizados</td>
             <td align="left">Dato</td>
-            <td><a href="unidad-03/" target="_blank" rel="noopener">Ver</a></td>
-            <td><a href="unidad-03/" target="_blank" rel="noopener">Ver</a></td>
+            <td><a href="UNIDAD_3_css/CLASE_11-6-8-2026/sitio-personal/contacto.html" target="_blank" rel="noopener">Ver</a></td>
+            <td><a href="RECURSOS/CLASE-18-17-8-2026.png" target="_blank" rel="noopener">Ver</a></td>
         </tr>
         <tr align="center">
             <td>S19</td>
