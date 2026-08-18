@@ -3,87 +3,132 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta name="description" content="Galeria de imágenes">
-    <meta name="keywords" content="galeria, imágenes, HTML">
-    <meta name="author" content="Greivin Montero Contretras">
-    <title>Galeria</title>
-    <link rel="stylesheet" href="css/estilos.css"
+    <meta name="author" content="Greivin" />
+    <meta
+        name="description"
+        content="Imagen de la galería con contenido relacionado con HTML5"/>
+    <meta
+        name="keywords"
+        content="HTML5, estándar vivo, Formatos, W3C, Imagenes de laboratorio"/>
+
+    <link rel="icon" href="Recursos/flavicon.png" type="image/png">
+    <link rel="stylesheet" href="css/estilos.css">
+    <title>Galería</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;700;800&display=swap" rel="stylesheet">
 </head>
-<!--BODY-->
+<div class="contenedor">
 <body>
-    <header>
-        <h1>Codificiación de Páginas Web</h1>
-        <p>Sitio de demostración del módulo</p>
-        <nav>
-            <ul>
-                <li><a href="Index.html">Inicio</a></li>
-                <li><a href="formularios.html">Formularios</a></li>
-                <li><a href="articulos.html">Articulos</a></li>
-                <li><a href="horarios.html">Horarios</a></li>
-                <li><a href="registro.html">Registro</a></li>
-                <li><a href="galeria.html">Galeria</a></li>
-                <li><a href="insignia.html">Insignia</a></li>
-            </ul>
-        </nav>
-    </header>
+<header id="inicio">
+    <h1>Galeria de imagenes</h1>
+    <p>Sitio de demostración del módulo <abbr title="Código del módulo">CSTI12002</abbr>.</p>
 
-    <main>
-        <h2>Galeria de Imágenes</h2>
-        <p>Esta es una simple galeria de imágenes.</p>
-        <!--IMG: es una etiqueta que permite insertar imágenes en una página web. src: es el atributo que especifica la ruta de la imagen. alt: es el atributo que proporciona una descripción alternativa de la imagen. width: es el atributo que especifica el ancho de la imagen-->
-        <img src="Recursos/CLASE-7-29-7-2026.avif" alt="Imagen 1" width="400" style="border: 1px solid #ccc; padding: 10px; margin-top: 20px;">
-        <p>Imagen 1: Muestra un laboratorio de informática.</p>
+    <nav>
+    <ul>
+        <li><a href="index.html">Inicio</a></li>
+        <li><a href="articulo.html">Artículo</a></li>
+        <li><a href="horario.html">Horario</a></li>
+        <li><a href="registro.html">Registro</a></li>
+        <li><a href="galeria.html">Galería</a></li>
+        <li><a href="insignia.html">Insignia</a></li>
+    </ul>
+    </nav>
+</header>
 
-        <!--FIGURE AGRUPA LAS IMAGENES CON DESCRIPCION CASI COMO EL FIELDSET-->
-        <figure style="border: 1px solid #ccc; padding: 10px; margin-top: 20px;">
-            <img src="Recursos/CLASE-7-29-7-2026.avif" alt="Imagen 2" width="400">
-            <figcaption>Imagen 2: Muestra un aula de clases.</figcaption>
+<main>
+    <article>
+        <h2>Galería</h2>
+    <div class="tarjeta galeria-grid">
+        <!-- Imágenes y sus atributos -->
+        <figure>
+            <img src="recursos/S.7_lab01.jpg" alt="Imagen de la galería de un laboratorio de informatica" >
+            <figcaption>Imagen de laboratorio</figcaption>
         </figure>
 
-        <!-- VARIOS FORMATOS: el navegador elige el uno -->
-        <figure style="border: 1px solid #ccc; padding: 10px; margin-top: 20px;">
-        <picture>
-            <!--source srcset="recursos/CLASE-7-29-7-2026.avif" type="image/avif"-->
-        <source srcset="recursos/CLASE-7-29-7-2026.avif" type="image/webp" />
-        <img src="recursos/2.png" alt="Imagen de la galeria de un laboratorio de informatica" width="400" height="500" />
+        <!--FIGURE: agrupa un contenido con una explicaciom-->
+        <figure class="figura-destacada">            
+            <picture>
+                <source srcset="recursos/S.7_lab01.webp" type="image/webp">
+                <source srcset="recursos/S.7_lab01.jpg" type="image/jpeg">
+                <img src="recursos/S.7_lab01.webp" alt="Imagen de la galería de un laboratorio de informatica" >
         </picture>
-        <figcaption>Imagen de un laboratorio de informatica</figcaption>
+        <span class="etiqueta">Destacada</span>
+        <figcaption>Imagen de la galería de un laboratorio de informatica</figcaption>
         </figure>
 
+        <figure>
+            <img src="Recursos/S.7_lab02.jpg" alt="Siuuuu" >
+            <figcaption>laboratorio</figcaption>
+        </figure>
+
+<!--Copio las imagenes de galeria-->
+        <figure>
+            <img src="recursos/S.7_lab01.jpg" alt="Imagen de la galería de un laboratorio de informatica" >
+            <figcaption>Imagen de laboratorio</figcaption>
+        </figure>
+
+        <!--FIGURE: agrupa un contenido con una explicaciom-->
+        <figure class="figura-destacada">            
+            <picture>
+                <source srcset="recursos/S.7_lab01.webp" type="image/webp">
+                <source srcset="recursos/S.7_lab01.jpg" type="image/jpeg">
+                <img src="recursos/S.7_lab01.webp" alt="Imagen de la galería de un laboratorio de informatica" >
+        </picture>
+        <span class="etiqueta">Destacada</span>
+        <figcaption>Imagen de la galería de un laboratorio de informatica</figcaption>
+        </figure>
+
+        <figure>
+            <img src="Recursos/S.7_lab02.jpg" alt="Siuuuu" >
+            <figcaption>laboratorio</figcaption>
+        </figure>
+    </div>
+        <!--Audio-->
+        <section id="audio">
+            <h3>Audio de bienvenida</h3>
+
+            <audio controls>
+                <source src="recursos/End_of_Line_opti.mp3" type="audio/mpeg">
+                <source src="recursos/End_of_Line_opti.ogg" type="audio/ogg">
+                <p>Tu navegador no soporta la reproducción de audio.</p>
+                <a href="recursos/End_of_Line_opti.mp3">Descargar archivo de audio</a>
+            </audio>
+        </section>
 
 
-        <!--AUDIO-->
-        <h3>Audio</h3>
-        <!--audio controls: es una etiqueta que permite insertar un reproductor de audio en una página web. source: es el atributo que especifica la ruta del archivo de audio. type: es el atributo que especifica el tipo de archivo de audio. download: es el atributo que permite descargar el archivo de audio.-->
-        <audio controls>
-            <source src="Recursos/Audio/CLASE-7-29-7-2026.ac3" type="audio/mpeg">
-            Tu navegador no soporta el elemento de audio.
-            <source src="Recursos/Audio/CLASE-7-29-7-2026.ogg" type="audio/ogg">
-            Tu navegador no soporta el elemento de audio.
-            <a>
-                Descargar audio
-                <a href="Recursos/Audio/CLASE-7-29-7-2026.ac3" download>Descargar en formato AC3</a>
-                <a href="Recursos/Audio/CLASE-7-29-7-2026.ogg" download>Descargar en formato OGG</a>
-            </a>
-        </audio>
 
-        <!--VIDEO-->
-        <h3>Video</h3>
-        <!--video controls: es una etiqueta que permite insertar un reproductor de video en una página web. source: es el atributo que especifica la ruta del archivo de video. type: es el atributo que especifica el tipo de archivo de video. download: es el atributo que permite descargar el archivo de video.-->
-        <video controls width="400" poster="Recursos/CLASE-7-29-7-2026.avif" alt="Imagen de portada del video">
-            <!--poster src="Recursos/Video/poster.png" alt="Imagen de portada del video"-->
-            <source src="Recursos/Video/video-optimizado.webm" type="video/webm">
-            <track src="Recursos/video2.vtt" kind="subtitles" srclang="es" label="Español" default>
-            Tu navegador no soporta el elemento de video.
-            <!--TRACK-->
-            <track src="Recursos/Video/video.vtt" kind="subtitles" srclang="es" label="Español">
-        </video>
 
-        
-    </main>
-    <!--FOOTER: pie de pagina. &copy;: simbolo de copyright. Todos los derechos reservados: frase que indica que el contenido esta protegido por derechos de autor-->
-    <footer>
-        <p>&copy; 2026 Greivin Montero Contretras. Todos los derechos reservados.</p>
-    </footer>
+
+        <!--Video  -->
+        <section id="video">
+            <h3>Mini tutorial</h3>
+
+            <video controls width="640" height="360" poster="recursos/Tuto.jpg" preload="metadata">
+                <source src="recursos/video2.mp4" type="video/mp4">
+                <source src="recursos/video2.webm" type="video/webm">
+                <track src="recursos/video2.vtt" kind="subtitles" srclang="es" label="Español" default>
+
+                <p>Tu navegador no soporta la reproducción de video.</p>
+                <a href="recursos/video2.mp4">Descargar archivo de video</a>
+            </video>
+        </section>
+
+
+
+    </article>
+
+    <p><a href="#inicio">Volver al inicio de la página</a></p>
+</main>
+
+<footer>
+    <h2>Contacto</h2>
+    <address>
+        Instituto Nacional de Aprendizaje<br>
+        Correo: <a href="mailto:Greivin@ejemplo.com">Greivin@ejemplo.com</a>
+    </address>
+    <p><small>&copy; 2026 &middot; INA &middot; Todos los derechos reservados</small></p>
+</footer>
 </body>
+</div>
 </html>

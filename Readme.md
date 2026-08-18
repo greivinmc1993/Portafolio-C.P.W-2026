@@ -299,14 +299,14 @@ Portafolio-Codificación de Páginas Web/
         <tr align="center">
             <td>S18</td>
             <td>Componentes estilizados</td>
-            <td align="left">Dato</td>
+            <td align="left">Aprendí a integrar propiedades de CSS para estilizar componentes de interfaz como tarjetas (*cards*), tablas, formularios y botones. Usé `box-shadow`, `border-radius` y `padding` para dar estructura y profundidad. Implementé pseudo-clases como `:focus`, `:hover` y `:active` junto a `transition` para crear microinteracciones dinámicas y profesionales.</td>
             <td><a href="UNIDAD_3_css/CLASE_11-6-8-2026/sitio-personal/contacto.html" target="_blank" rel="noopener">Ver</a></td>
             <td><a href="RECURSOS/CLASE-18-17-8-2026.png" target="_blank" rel="noopener">Ver</a></td>
         </tr>
         <tr align="center">
             <td>S19</td>
             <td>Animaciones y filtros</td>
-            <td align="left">Dato</td>
+            <td align="left">Aprendí a aplicar transiciones graduales y transformaciones (`translate`, `rotate`, `scale`) sin alterar el flujo del documento. Creé animaciones autónomas mediante `@keyframes` y `animation`, sumando efectos gráficos con `filter`. Comprendí que el movimiento debe tener propósito, moderación y respetar la accesibilidad (`prefers-reduced-motion`).</td>
             <td><a href="unidad-03/" target="_blank" rel="noopener">Ver</a></td>
             <td><a href="unidad-03/" target="_blank" rel="noopener">Ver</a></td>
         </tr>

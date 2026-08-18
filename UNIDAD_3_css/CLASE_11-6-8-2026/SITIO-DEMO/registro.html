@@ -1,90 +1,209 @@
 <!DOCTYPE html>
 <html lang="es">
+
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta name="description" content="Formulario de contacto">
-    <meta name="keywords" content="formulario, contacto, HTML">
-    <meta name="author" content="Greivin Montero Contretras">
-    <title>Formularios</title>
-    <link rel="stylesheet" href="css/estilos.css"
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="author" content="Greivin" />
+  <meta name="description" content="Formulario de matrícula para las sesiones de refuerzo del módulo CSTI12002.">
+  <meta name="keywords" content="matrícula, registro, formulario, CSTI12002, INA">
+  <link rel="stylesheet" href="css/estilos.css">
+  <link rel="icon" href="../Recursos/flavicon.png">
+
+  <title>Registro | Codificación de páginas web</title>
+
+  <link rel="icon" href="Recursos/flavicon.png" type="image/png">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;700;800&display=swap" rel="stylesheet">
 </head>
-<!--BODY-->
+<div class="contenedor">
 <body>
-    <header>
-        <h1>Codificiación de Páginas Web</h1>
-        <p>Sitio de demostración del módulo</p>
-        <nav>
-            <ul>
-                <li><a href="Index.html">Inicio</a></li>
-                <li><a href="formularios.html">Formularios</a></li>
-                <li><a href="articulos.html">Articulos</a></li>
-                <li><a href="horarios.html">Horarios</a></li>
-                <li><a href="registro.html">Registro</a></li>
-                <li><a href="galeria.html">Galeria</a></li>
-                <li><a href="insignia.html">Insignia</a></li>
-            </ul>
-        </nav>
-    </header>
+  <header id="inicio">
+    <h1>Registro</h1>
+    <p>Sitio de demostración del módulo <abbr title="Código del módulo">CSTI12002</abbr>.</p>
 
-    <main>
-        <h2>Formulario de Matricula</h2>
-        <!--FORM: es un formulario que permite al usuario enviar información a un servidor. action: es la URL a la que se enviará la información. method: es el método HTTP que se utilizará para enviar la información. POST: envía la información en el cuerpo de la solicitud HTTP. GET: envía la información en la URL. style: es un atributo que permite aplicar estilos CSS al formulario. background-color: color de fondo del formulario. padding: espacio interno del formulario. border-radius: radio de las esquinas del formulario. border: borde del formulario. max-width: ancho máximo del formulario-->
-        <form action="#" method="POST" style="background-color: #f2f2f2; padding: 20px; border-radius: 5px; border: 1px solid #300cff; max-width: 400px;">
-            <fieldset style="border: 1px solid #f84791; padding: 10px;">
-                <legend>Información Personal</legend>
+    <nav>
+      <ul>
+        <li><a href="index.html">Inicio</a></li>
+        <li><a href="articulo.html">Artículo</a></li>
+        <li><a href="horario.html">Horario</a></li>
+        <li><a href="registro.html">Registro</a></li>
+        <li><a href="galeria.html">Galería</a></li>
+        <li><a href="insignia.html">Insignia</a></li>
+      </ul>
+    </nav>
+  </header>
 
-            <label for="nombre">Nombre:</label>
-            <input type="text" id="nombre" name="nombre" required placeholder="Ingrese su nombre"><br><br>
+  <main id="contenido-registro">
 
-            <label for="apellido">Apellido:</label>
-            <input type="text" id="apellido" name="apellido" required><br><br>
+    <article>
+      <h2>Formulario de matrícula</h2>
 
-            <label for="email">Correo Electrónico:</label>
-            <input type="email" id="email" name="email" required><br><br>
+      <p>
+        Complete los datos para inscribirse en una sesión de refuerzo.
+        Los campos marcados con asterisco (*) son obligatorios.
+      </p>
 
-            <label for="telefono">Teléfono:</label>
-            <input type="tel" id="telefono" name="telefono" pattern="[0-9]{10}" title="Ingrese un número de teléfono válido de 10 dígitos" placeholder="Ingrese su teléfono"><br><br>
+      <form action="#" method="post">
 
-            <label for="curso">Curso:</label>
-            <select id="curso" name="curso">
-                <option value="html">HTML</option>
-                <option value="css">CSS</option>
-                <option value="javascript">JavaScript</option>
-                <option value="python">Python</option>
-            </select><br><br>
+        <!--  GRUPO 1: DATOS PERSONALES -->
+        <fieldset>
+          <legend>Datos personales</legend>
 
-            <input type="submit" value="Enviar Matricula">
-            </fieldset>
-            <fieldset>
-            <legend>Modalidad</legend>
-            <input type="radio" id="presencial" name="modalidad" value="presencial">
-            <label for="presencial">Presencial</label><br>
-            <input type="radio" id="virtual" name="modalidad" value="virtual">
-            <label for="virtual">Virtual</label><br>
-            <input type="radio" id="mixta" name="modalidad" value="mixta">
-            <label for="mixta">Mixta</label><br><br>
-            </fieldset>
+          <p>
+            <label for="nombre">Nombre completo *</label>
+            <input type="text" id="nombre" name="nombre"
+                   required minlength="3" maxlength="60"
+                   placeholder="Ana Rodríguez Mora">
+          </p>
 
-            <label for="horario">Horario preferido</label><br>
-            <select id="horario" name="horario">
-                <option value="mañana">Mañana</option>
-                <option value="tarde">Tarde</option>
-                <option value="noche">Noche</option>
-            </select><br><br>
+          <p>
+            <label for="cedula">Número de identificación *</label>
+            <input type="text" id="cedula" name="cedula"
+                   required pattern="[0-9]{9}"
+                   title="Nueve dígitos, sin guiones ni espacios"
+                   placeholder="112345678">
+          </p>
 
-            <fieldset>
-            <legend>Intereses</legend>
-            <label for="comentarios">Comentarios:</label><br>
-            <!--TEXTAREA: es un cuadro de texto multilinea. rows: cantidad de filas. cols: cantidad de columnas. placeholder: texto que aparece dentro del cuadro de texto-->
-            <textarea id="comentarios" name="comentarios" rows="4" cols="50" placeholder="Ingrese sus comentarios"></textarea><br><br>
-            </fieldset>
+          <p>
+            <label for="correo">Correo electrónico *</label>
+            <input type="email" id="correo" name="correo"
+                   required
+                   placeholder="persona@ejemplo.com">
+            <small>Se usará para confirmar la matrícula.</small>
+          </p>
 
-        </form>
-    </main>
-    <!--FOOTER: pie de pagina. &copy;: simbolo de copyright. Todos los derechos reservados: frase que indica que el contenido esta protegido por derechos de autor-->
-    <footer>
-        <p>&copy; 2026 Greivin Montero Contretras. Todos los derechos reservados.</p>
-    </footer>
+          <p>
+            <label for="telefono">Teléfono *</label>
+            <input type="tel" id="telefono" name="telefono"
+                   required pattern="[0-9]{8}"
+                   title="Ocho dígitos, sin espacios ni guiones"
+                   placeholder="88887777">
+          </p>
+
+          <p>
+            <label for="clave">Contraseña de acceso *</label>
+            <input type="password" id="clave" name="clave"
+                   required minlength="8">
+            <small>Mínimo ocho caracteres.</small>
+          </p>
+        </fieldset>
+
+        <!--  GRUPO 2: DETALLES DE LA MATRÍCULA  -->
+        <fieldset>
+          <legend>Detalles de la matrícula</legend>
+
+          <p>
+            <label for="fecha">Fecha preferida *</label>
+            <input type="date" id="fecha" name="fecha" required>
+          </p>
+
+          <p>
+            <label for="sesiones">Cantidad de sesiones *</label>
+            <input type="number" id="sesiones" name="sesiones"
+                   required min="1" max="8" step="1" value="2">
+            <small>Entre 1 y 8 sesiones.</small>
+          </p>
+
+          <p>
+            <label for="unidad">Unidad por reforzar</label>
+            <select id="unidad" name="unidad">
+              <option value="">Seleccione una opción</option>
+              <option value="1">Unidad 1 &mdash; Control de versiones</option>
+              <option value="2">Unidad 2 &mdash; Etiquetas HTML</option>
+              <option value="3">Unidad 3 &mdash; Hojas de estilo</option>
+              <option value="4">Unidad 4 &mdash; Páginas responsivas</option>
+              <option value="5">Unidad 5 &mdash; Frameworks</option>
+            </select>
+          </p>
+
+          <!-- Grupo de radio: el mismo name los agrupa y los excluye -->
+          <fieldset>
+            <legend>Modalidad *</legend>
+
+            <p>
+              <input type="radio" id="presencial" name="modalidad"
+                     value="presencial" required>
+              <label for="presencial">Presencial</label>
+            </p>
+            <p>
+              <input type="radio" id="virtual" name="modalidad" value="virtual">
+              <label for="virtual">Virtual sincrónica</label>
+            </p>
+            <p>
+              <input type="radio" id="mixta" name="modalidad" value="mixta">
+              <label for="mixta">Mixta</label>
+            </p>
+          </fieldset>
+
+          <!-- Casillas de verificación: se pueden marcar varias -->
+          <fieldset>
+            <legend>Recursos que solicita</legend>
+
+            <p>
+              <input type="checkbox" id="equipo" name="recursos" value="equipo">
+              <label for="equipo">Equipo de cómputo del centro</label>
+            </p>
+            <p>
+              <input type="checkbox" id="material" name="recursos" value="material">
+              <label for="material">Material impreso</label>
+            </p>
+            <p>
+              <input type="checkbox" id="grabacion" name="recursos" value="grabacion">
+              <label for="grabacion">Grabación de la sesión</label>
+            </p>
+          </fieldset>
+
+          <p>
+            <label for="comentarios">Comentarios</label>
+            <textarea id="comentarios" name="comentarios"
+                      rows="4" maxlength="300"
+                      placeholder="Indique qué temas desea reforzar"></textarea>
+            <small>Máximo 300 caracteres.</small>
+          </p>
+        </fieldset>
+
+        <!-- GRUPO 3: CONFIRMACIÓN -->
+        <fieldset>
+          <legend>Confirmación</legend>
+
+          <p>
+            <input type="checkbox" id="acepto" name="acepto" required>
+            <label for="acepto">
+              Acepto que me contacten por los medios indicados *
+            </label>
+          </p>
+        </fieldset>
+
+        <p class="grupo-botones">
+          <button class="boton" type="submit">Enviar matrícula</button>
+          <button class="boton-secundario" type="reset">Limpiar formulario</button>
+        </p>
+      </form>
+    </article>
+
+    <aside>
+      <h2>Antes de enviar</h2>
+      <p>
+        Revise el <a href="horario.html#calendario">calendario</a> para
+        confirmar la disponibilidad de la fecha elegida.
+      </p>
+    </aside>
+
+    <p><a href="#inicio">Volver al inicio de la página</a></p>
+
+  </main>
+
+  <footer>
+    <h2>Contacto</h2>
+    <address>
+      Instituto Nacional de Aprendizaje<br>
+      Correo: <a href="mailto:Greivin@ejemplo.com">Greivin@ejemplo.com</a>
+    </address>
+    <p><small>&copy; 2026 &middot; INA &middot; Todos los derechos reservados</small></p>
+  </footer>
+
 </body>
+</div>
 </html>

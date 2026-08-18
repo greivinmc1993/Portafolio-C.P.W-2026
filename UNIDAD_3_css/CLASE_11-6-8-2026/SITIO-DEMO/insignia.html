@@ -1,95 +1,137 @@
-<!doctype html>
-<!--[if lt IE 7]>      <html class="no-js lt-ie9 lt-ie8 lt-ie7"> <![endif]-->
-
+<!DOCTYPE html>
 <html lang="es">
-  <head>
-    <meta charset="utf-8" />
-    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
-    <title>MI SITIO DEMO | CODIFICACIÓN DE PÁGINAS WEB</title>
-    <meta
-      name="description"
-      content="Demo de un sitio web creado con HTML y CSS"
-    />
-    <meta name="viewport" content="width=device-width, initial-scale=1" />
-    <link rel="stylesheet" href="" />
-    <meta name="keywords" content="codificación, páginas web" />
-    <meta name="author" content="Tu Nombre" />
-    <link rel="icon" href="Recursos/favicon.png" type="image/x-icon" />
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="author" content="Greivin" />
+    <meta name="description" content="insignia de participacion del modulo CSTI12002.">
+    <meta name="keywords" content="Insignia, participacion, INA, CSTI12002">
+    <link rel="icon" href="../Recursos/flavicon.png" type="image/png">
+    <link rel="stylesheet" href="css/estilos.css">
     <title>Insignia</title>
-    <link rel="stylesheet" href="css/estilos.css"
-    <!---->
-  </head>
-  <body>
-    <header>
-        <h1>Codificiación de Páginas Web</h1>
-        <p>Sitio de demostración del módulo</p>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;700;800&display=swap" rel="stylesheet">
+</head>
+<div class="contenedor">
+<body>
+        <header id="inicio">
+            <h1>Insignia</h1>
+            <p>
+            Sitio de demostración del módulo
+            <abbr title="Código del módulo">CSTI12002</abbr>.
+            </p>
+
         <nav>
             <ul>
-                <li><a href="Index.html">Inicio</a></li>
-                <li><a href="formularios.html">Formularios</a></li>
-                <li><a href="articulos.html">Articulos</a></li>
-                <li><a href="horarios.html">Horarios</a></li>
-                <li><a href="registro.html">Registro</a></li>
-                <li><a href="galeria.html">Galeria</a></li>
-                <li><a href="insignia.html">Insignia</a></li>
+            <li><a href="index.html">Inicio</a></li>
+            <li><a href="articulo.html">Artículo</a></li>
+            <li><a href="horario.html">Horario</a></li>
+            <li><a href="registro.html">Registro</a></li>
+            <li><a href="galeria.html">Galería</a></li>
+            <li><a href="insignia.html">Insignia</a></li>
             </ul>
         </nav>
     </header>
 
-    <main>
-      <article>
-        <h2>Graficas vectoriales</h2>
+    <main id="contenido">
+        <article class="fila-tarjetas2">
+            <h2>Graficos vectoriales</h2>
+            <!--SVG EN LINEA: se dibuja en condigo s8-->
+            <div class="tarjeta2">
+                <section id="insignia">
+                    <h3>Insignia del modulo</h3>
+                    <svg width="200" height="200"
+                    viewBox="0 0 200 200"
+                    xmlns="http://www.w3.org/2000/svg">
 
-        <section>
-          <h3>Insignia</h3>
-          <svg
-            xmlns="http://www.w3.org/2000/svg"
-            width="200"
-            height="200"
-            viewBox="0 0 200 200"
-            fill="none"
-            stroke="currentColor"
-            stroke-width="2"
-            stroke-linecap="round"
-            stroke-linejoin="round">
-            <path d="M12 2L15.09 8.26L22 9.27L17 14.14L18.18 21.02L12 17.77L5.82 21.02L7 14.14L2 9.27L8.91 8.26L12 2Z" />
+                    <circle cx="100" cy="100" r="90" fill="#C55A11"/>
 
-            <circle cx="100" cy="100" r="100" fill="#10f9f9" />
-
-            <circle cx="100" cy="100" r="72" fill="#f910f9" stroke="#1f4e79" stroke-width="4" />
+                    <circle cx="100" cy="100" r="72"
+                        fill="#FFF8E1"
+                        stroke="#1F4E79"
+                        stroke-width="4"/>  
             
-            <polygon points="100,45 112,80 149,80 119,102 130,137 100,115 70,137 81,102 51,80 88,80" fill="#1f4e00" stroke="#1f4e79" stroke-width="2" />
+                    <polygon points="100,45 112,80 149,80 119,102 130,137 100,115 70,137 81,102 51,80 88,80"
+                            fill="#F5C518"
+                            stroke="#1F4E79"
+                            stroke-width="2"/>
 
-            <!--TEXT se usa para crear texto en SVG-->
+                    <!--text: codigo para agregar texto svg-->
+                    <text x="100" y="150" text-anchor="middle" font-size="14" fill="#1F4E79">HTML</text>
 
-            <text x="100" y="170" text-anchor="middle" font-size="14" fill="#1f4e79">
-                HOLA A TODOS
-            </text>
-            </svg> 
-            <p>
-                LA INSIGNIA SE DIBUJO CON HTML ES UN SVG
-            </p>
+                    
 
-        </section> 
+                    </svg>
 
-        <section>
-            <h4>La misma insiginia como archivo SVG</h4>
-            <img src="Recursos/insignia.svg" alt="Insignia en formato SVG" width="200" height="200" />
-            <p>
-                LA INSIGNIA SE ENLAZA DESDE UN ARCHIVO SVG, SE PUEDE ABRIR EN UN NAVEGADOR O EDITOR DE IMAGENES VECTORIALES
-            </p>
-        </section>
+                    <p>La insignia esta dibujada con codigo, no es fotografia por eso conserva su nitidez en cualquier tamaño</p>
+
+                </section>
+            <!-- svg como archivo externo-->
+                <section id="externo">
+                    <h3>La misma insignia como archivo</h3>
+                    <img src="../Recursos/insignia.svg" alt="Insignia de modulo con una estrella sobre un circulo" width="100" height="100">
+                    <p>Aqui la insignia se enlace desde un archivo
+                        <code>.svg</code> aparte. Se ve igual de nitido, aunque mida la mitad porque al ser vectorial no pierde calidad
+                    </p>
+
+                </section>
+
+                <section>
+                        <h3>Insignia del modulo</h3>
+                        <svg width="200" height="200"
+                        viewBox="0 0 200 200"
+                        xmlns="http://www.w3.org/2000/svg">
+
+                        <circle cx="100" cy="100" r="90" fill="#C55A11"/>
+
+                        <circle cx="100" cy="100" r="72"
+                            fill="#FFF8E1"
+                            stroke="#1F4E79"
+                            stroke-width="4"/>  
+                
+                        <polygon points="100,45 112,80 149,80 119,102 130,137 100,115 70,137 81,102 51,80 88,80"
+                                fill="#F5C518"
+                                stroke="#1F4E79"
+                                stroke-width="2"/>
+
+                        <!--text: codigo para agregar texto svg-->
+                        <text x="100" y="150" text-anchor="middle" font-size="14" fill="#1F4E79">HTML</text>
+
+                        
+
+                        </svg>
+
+                        <p>La insignia esta dibujada con codigo, no es fotografia por eso conserva su nitidez en cualquier tamaño</p>
+
+                    </section>
+                <!-- svg como archivo externo-->
+                <section>
+                    <h3>La misma insignia como archivo</h3>
+                    <img src="../Recursos/insignia.svg" alt="Insignia de modulo con una estrella sobre un circulo" width="100" height="100">
+                    <p>Aqui la insignia se enlace desde un archivo
+                        <code>.svg</code> aparte. Se ve igual de nitido, aunque mida la mitad porque al ser vectorial no pierde calidad
+                    </p>
+
+                </section>
+            </div>
+    </article>
+    
+
+
+    
+    <p><a href="#inicio">Volver al inicio de la página</a></p>
     </main>
 
-    <script src="" async defer></script>
-    <img src="" alt="" />
-    <a href="articulos.html" rel="noopener noreferrer">Artículos</a>
+    
     <footer>
-      <p>
-        &copy; 2026 Greivin Montero Contretras. Todos los derechos reservados.
-      </p>
+        <h2>Contacto</h2>
+        <address>
+            Instituto Nacional de Aprendizaje<br>
+            Correo: <a href="mailto:Greivin@ejemplo.com">Greivin@ejemplo.com</a>
+        </address>
+        <p><small>&copy; 2026 &middot; INA &middot; Todos los derechos reservados</small></p>
     </footer>
-  </body>
+</body>
+</div>
 </html>
-
-
