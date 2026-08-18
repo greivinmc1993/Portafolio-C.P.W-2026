@@ -58,20 +58,20 @@
                             <label for="nombre_estudiante">Nombre completo:</label><br>
                             <input type="text" id="nombre_estudiante" name="estudiante_nombre" required minlength="5" maxlength="80">
 
-                            <br><br>
+                            <br>
 
                         <!-- C1: Obligatorio (2) | Tipo de dato que valida el correo -->
                             <label for="correo_estudiante">Correo electrónico:</label><br>
                             <input type="email" id="correo_estudiante" name="estudiante_correo" required>
 
-                            <br><br>
+                            <br>
 
                         <!-- C1: Obligatorio (3) | Tipo tel para teclado numérico en móvil -->
                         <!-- C3: Expresión regular de 8 dígitos exactos y mensaje de ayuda en el title -->
                             <label for="telefono_estudiante">Teléfono móvil:</label><br>
                             <input type="tel" id="telefono_estudiante" name="estudiante_telefono" required pattern="^[0-9]{8}$" title="Debe ingresar exactamente 8 dígitos, sin espacios ni guiones.">
 
-                            <br><br>
+                            <br>
 
                         <!-- Tipo de dato que oculta lo escrito -->
                             <label for="clave_plataforma">Crear contraseña para la plataforma educativa:</label><br>
@@ -93,16 +93,16 @@
                             <label for="fecha_inicio">Fecha preferida para iniciar:</label><br>
                             <input type="date" id="fecha_inicio" name="curso_fecha" required>
 
-                            <br><br>
+                            <br>
 
                         <!-- Tipo numérico con flechas -->
                         <!-- C4: Valor mínimo, máximo y salto (step) -->
                             <label for="meses_experiencia">Meses de experiencia previa programando en JavaScript:</label><br>
                             <input type="number" id="meses_experiencia" name="estudiante_experiencia" min="0" max="60" step="1">
-                            <br><br>
+                            <br>
 
                         <!-- Requerimiento B3: Opción única con mismo name pero distintos id -->
-                            <p>Seleccione la modalidad de estudio:</p>
+                            <p><strong>Seleccione la modalidad de estudio:</strong></p>
                             <input type="radio" id="modalidad_sincrona" name="curso_modalidad" value="sincrono" checked>
                             <label for="modalidad_sincrona">Clases en vivo (Síncrono)</label><br>
                             
@@ -111,7 +111,7 @@
                             <br><br>
 
                         <!-- Casillas de verificación para marcar varias opciones -->
-                            <p>Herramientas del ecosistema que te interesa profundizar:</p>
+                            <p><strong>Herramientas del ecosistema que te interesa profundizar:</strong></p>
                             <input type="checkbox" id="interes_redux" name="interes_redux" value="redux">
                             <label for="interes_redux">Redux Toolkit (Manejo de estados)</label><br>
                             
