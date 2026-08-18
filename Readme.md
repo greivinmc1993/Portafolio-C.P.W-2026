@@ -307,8 +307,8 @@ Portafolio-Codificación de Páginas Web/
             <td>S19</td>
             <td>Animaciones y filtros</td>
             <td align="left">Aprendí a aplicar transiciones graduales y transformaciones (`translate`, `rotate`, `scale`) sin alterar el flujo del documento. Creé animaciones autónomas mediante `@keyframes` y `animation`, sumando efectos gráficos con `filter`. Comprendí que el movimiento debe tener propósito, moderación y respetar la accesibilidad (`prefers-reduced-motion`).</td>
-            <td><a href="unidad-03/" target="_blank" rel="noopener">Ver</a></td>
-            <td><a href="unidad-03/" target="_blank" rel="noopener">Ver</a></td>
+            <td><a href="UNIDAD_3_css/CLASE_11-6-8-2026/sitio-personal/galeria.html" target="_blank" rel="noopener">Ver</a></td>
+            <td><a href="RECURSOS/CLASE-19-18-8-2026.png" target="_blank" rel="noopener">Ver</a></td>
         </tr>
         <tr align="center">
             <td>S20</td>

@@ -97,7 +97,8 @@ blockquote p{
 }
 
 
-
+/*estilos a solo enlaces dentro del nav*/
+/*pseudo clase :hover*/
 header nav a{
     text-transform: uppercase;
     letter-spacing: 1px;
@@ -105,8 +106,22 @@ header nav a{
     text-decoration: none;
     /*display: inline-block;/*Pone en linea elementos*/
     padding: 10px 15px;
-
+    color: #fff;
+    margin-right: 15px;
+    transition: all 1.3s ease;/*Cambio suave*/
+    display: block;
+    /* ease: arranca lento, acelera y frena por omision.
+    liniear: velocidad constante.
+    ease-in: arranca lento.
+    ease-out: sale lento.
+    easeint-out: lento en los 2 extremos. */
 }
+
+header nav a:hover {
+    color: #f8cbad; /* al pasar el cursor*/
+    transform: translateY(10px);
+}
+
 header nav ul{
     margin-top: 10px;
     display: flex;
@@ -154,7 +169,7 @@ header nav li{
     top: 0px;
     left: 0px;
     width: 100%;/*fija con respecto a la ventana, cabecera queda arriba*/
-    background-image: url(../Recursos/Fondo1.webp);
+    background-image: url();
     padding: 12px 20px;
     background-position: center;
     background-repeat: no-repeat;
@@ -168,17 +183,7 @@ header nav li{
     Fluye normal y se pega al llegar arriba o limite del contenedor
 }*/
 
-/*estilos a solo enlaces dentro del nav*/
 
-nav a {
-    color: #fff;
-    margin-right: 15px;
-    transition: color 0.3s;/*Cambio suave*/
-}
-/*pseudo clase :hover*/
-nav a:hover {
-    color: #f8cbad; /* al pasar el cursor*/
-}
 /* pseudo clasen _nth-child: filas cebra en la tabla*/
 tbody tr :nth-child(even){
     background-color: #9ac498;
@@ -328,6 +333,10 @@ sticky: fluye normal hasta llegar a umbral, y entonces se pega*/
     border-radius: 40px;
     font-size: 0.875rem;
     z-index: 10;
+}
+
+.figura-destacada:hover .etiqueta{
+    transform: scale(1.03) rotate(-3deg);
 }
 /*z-index SOLO FUNCIONA en elemento con un position declarado si el es static no funciona.
 escala de valores de z-index
@@ -508,6 +517,7 @@ form small{
 /*Hover 1*/
 .boton:hover{
     background-color: #a8490e;
+    transform: translateY(10px);
 }
 /*Active 2
 mientras se pulsa*/
@@ -523,9 +533,14 @@ mientras se pulsa*/
 /*variante secundaria*/
 .boton-secundario{
     background-color: #6b7280;
+    transition: all 0.8s ease;
 }
 .boton-secundario:hover{
     background-color: #4b5563;
+    transform: translateY(10px);
+}
+.boton{
+    transition: all 0.8s ease;
 }
 
 .tarjeta {
@@ -534,11 +549,55 @@ mientras se pulsa*/
     border-radius: 10px;
     box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
     box-shadow: 0 12px 3px rgba(174, 174, 174, 0.8);
+    
     /*0 es X, el 4px es Y 12px:blur o difuminado*/
 }
 
 .tarjeta figure:hover{
-    transform: translateY(-5px);/*Valor positivo va hacia arriba*/
+    transform: translateY(-5px) scale(1.03);/*Valor positivo va hacia arriba*/
     box-shadow: 0 8px 20px rgba(0, 0, 0, 0.15);
+    transition: all 0.8s ease;
     /*transition: all 1s ease;*//*Adicional*/
+}
+
+/* definir la trasiccion */
+
+@keyframes aparecer{
+    from{
+        opacity: 0;
+        transform: translateY(20px);
+    }
+    to{
+        opacity: 1;
+        transform: translateY(0px);
+    }
+}
+
+@keyframes pulso{
+    0%{
+        transform: scale(1);
+    }
+    50%{
+        transform: scale(1.08);
+    }
+    100%{
+        transform: scale(1);
+    }
+}
+
+/* como aplicar */
+
+.tarjeta{
+    animation: aparecer 2s ease;
+}
+
+.etiqueta{
+    animation: pulso 2s ease infinite;
+    /* animation: name duration timing-function delay iteration-count direction fill-mode; */
+}
+
+/* aplicacion de filtros */
+.galeria-grid img:hover{
+    filter: grayscale(35%) blur(4px) brightness(100%) opacity(50%);
+    transition: all 2s ease;
 }
