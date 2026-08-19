@@ -250,7 +250,7 @@ Portafolio-Codificación de Páginas Web/
         <tr align="center">
             <td>S11</td>
             <td>Introducción a CSS</td>
-            <td align="left" style="width: 40ch;">Aprendí a aplicar CSS en archivos externos (styles.css) mediante <link> para separar estructura de presentación . Entendí la anatomía de una regla (selector, propiedad y valor) , el impacto de la cascada y la especificidad , además de neutralizar estilos con un reset y validar con Jigsaw.</td>
+            <td align="left" width="40ch">Aprendí a aplicar CSS en archivos externos (styles.css) mediante <link> para separar estructura de presentación . Entendí la anatomía de una regla (selector, propiedad y valor) , el impacto de la cascada y la especificidad , además de neutralizar estilos con un reset y validar con Jigsaw.</td>
             <td><a href="UNIDAD_3_css/CLASE_11-6-8-2026/sitio-personal/index.html" target="_blank" rel="noopener">Ver</a></td>
             <td><a href="RECURSOS/clase-11-6-8-2026.png" target="_blank" rel="noopener">Ver</a></td>
         </tr>
