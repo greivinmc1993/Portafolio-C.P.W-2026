@@ -44,8 +44,182 @@
     </header>
 
     <main id="contenido">
-        <!-- PORTADA, HERO BANNER -->
+        <!-- PORTADA, HERO BANNER GALERIA -->
+            <section id="intro" class="pagina-encabezado">
+                <h1 class="pagina-titulo">Galería</h1>
+                <p class="pagina-bajada">Una Selección que Fotografiamos entre 2024 y 2026.</p>
+            </section>
 
+            <!-- CIFRAS, 4 DATOS GRID -->
+            <section id="cifras" class="seccion">
+                <div class="rejilla-cifras">
+
+                    <div class="cifra">
+                        <p class="cifra-numero">480</p>
+                        <p class="cifra-texto">Sesiones Realizadas</p>
+                    </div>
+
+                    <div class="cifra">
+                        <p class="cifra-numero">12</p>
+                        <p class="cifra-texto">Años de trayectoria</p>
+                    </div>
+
+                    <div class="cifra">
+                        <p class="cifra-numero">36</p>
+                        <p class="cifra-texto">Marca Acompañadas</p>
+                    </div>
+
+                    <div class="cifra">
+                        <p class="cifra-numero">98%</p>
+                        <p class="cifra-texto">Volvería a Contratarnos</p>
+                    </div>
+
+                </div>
+            </section>
+
+            <!-- CATEGORIAS CON FLEXBOX y anclas de cada seccion -->
+
+            <section id="categorias" class="seccion">
+                <h2 class="seccion-titulo">Explorar Por Categoria</h2>
+                <p class="seccion-entrada">Cada enlace lleva  a su sección dentro de esta misma página</p>
+
+                <ul class="fila-etiquetas">
+                    <li><a href="#mosaico" class="etiqueta">Todo el trabajo</a></li>
+                    <li><a href="#retrato" class="etiqueta">Retrato</a></li>
+                    <li><a href="#producto" class="etiqueta">Producto</a></li>
+                    <li><a href="#eventos" class="etiqueta">Eventos</a></li>
+                </ul>
+            </section>
+
+            <!-- MOSAICO PRINCIPAL CON GRID -->
+
+            <section id="mosaico" class="seccion seccion-alterna">
+
+                <h2 class="seccion-titulo">Todo el trabajo</h2>
+
+                <div class="mosaico">
+                    <!-- RECURSOS PARA TRABAJAR G-01 ETC OCUPAN 2 COLUMNAS-->
+                    <figure class="pieza pieza-ancha">
+                        <img src="recursos/g-01.jpg" alt="Retrato de una mujer junto a una ventana con luz natural" width="1200px" height="800px" loading="lazy">
+
+                        <figcaption class="pieza-info">
+                            <span class="pieza-titulo">Luz de Ventana</span>
+                            <span class="pieza-categoria">Retrato</span>
+                        </figcaption>
+                    </figure>
+
+                    <!-------------------------------------------------------------------------------->
+                    <!-- ocupa 2 filas -->
+                    <figure class="pieza pieza-ancha">
+                        <img src="recursos/g-02.jpg" alt="Fotografía Vertical De Una Botella De Cerámica Sobre Madera" width="600px" height="900px" loading="lazy">
+
+                        <figcaption class="pieza-info">
+                            <span class="pieza-titulo">Cerámica de Guaitil</span>
+                            <span class="pieza-categoria">Prodcuto</span>
+                        </figcaption>
+                    </figure>
+
+                    <!-------------------------------------------------------------------------------->
+                    <!-- OCUPA  -->
+                    <figure class="pieza pieza-ancha">
+                        <img src="recursos/g-03.jpg" alt="Manos Entrelazadas Durante una Ceremonia" width="600px" height="600px" loading="lazy">
+
+                        <figcaption class="pieza-info">
+                            <span class="pieza-titulo">Ceremonia</span>
+                            <span class="pieza-categoria">Eventos</span>
+                        </figcaption>
+                    </figure>
+
+                    <!-------------------------------------------------------------------------------->
+                    <figure class="pieza pieza-ancha">
+                        <img src="recursos/g-04.jpg" alt="Retrato en blanco y negro dee un hombre mayor sonriendo" width="600px" height="600px" loading="lazy">
+
+                        <figcaption class="pieza-info">
+                            <span class="pieza-titulo">Don Rafael</span>
+                            <span class="pieza-categoria">Retrato</span>
+                        </figcaption>
+                    </figure>
+
+                    <!-------------------------------------------------------------------------------->
+                    <!-- OCUPA 2x2 -->
+                    <figure class="pieza pieza-ancha">
+                        <img src="recursos/g-05.jpg" alt="Vista general de un salon durante una celebracion al atardecer" width="1200px" height="1200px" loading="lazy">
+
+                        <figcaption class="pieza-info">
+                            <span class="pieza-titulo">Atardecer en Santa Ana</span>
+                            <span class="pieza-categoria">Eventos</span>
+                        </figcaption>
+                    </figure>
+
+                    <!-------------------------------------------------------------------------------->
+                    <figure class="pieza pieza-ancha">
+                        <img src="recursos/g-06.jpg" alt="Taza de cafe sobre fondo neutro con sombra marcada" width="600px" height="600px" loading="lazy">
+
+                        <figcaption class="pieza-info">
+                            <span class="pieza-titulo">Serie Café</span>
+                            <span class="pieza-categoria">Producto</span>
+                        </figcaption>
+                    </figure>
+
+                    <!-------------------------------------------------------------------------------->
+                    <!-- OCUPA 2x1 -->
+                    <figure class="pieza pieza-ancha">
+                        <img src="recursos/g-07.jpg" alt="Grupo de personas coversando durante un evento corporativo" width="1200px" height="800px" loading="lazy">
+
+                        <figcaption class="pieza-info">
+                            <span class="pieza-titulo">Encuentro Anual</span>
+                            <span class="pieza-categoria">Eventos</span>
+                        </figcaption>
+                    </figure>
+
+                    <!-------------------------------------------------------------------------------->
+                    <!-- OCUPA 2 filas -->
+                    <figure class="pieza pieza-ancha">
+                        <img src="recursos/g-07.jpg" alt="Retrato de cuerpo entero de bailarina en un estudio" width="600px" height="900px" loading="lazy">
+
+                        <figcaption class="pieza-info">
+                            <span class="pieza-titulo">Estudio De Movimiento</span>
+                            <span class="pieza-categoria">Retrato</span>
+                        </figcaption>
+                    </figure>
+                    <!-------------------------------------------------------------------------------->
+                    <figure class="pieza pieza-ancha">
+                        <img src="recursos/g-09.jpg" alt="Conjunto de joyas artesanales sobre tela oscura" width="600px" height="600px" loading="lazy">
+
+                        <figcaption class="pieza-info">
+                            <span class="pieza-titulo">Joyería Artesanal</span>
+                            <span class="pieza-categoria">Producto</span>
+                        </figcaption>
+                    </figure>
+                    <!-------------------------------------------------------------------------------->
+                    <figure class="pieza pieza-ancha">
+                        <img src="recursos/g-10.jpg" alt="Niña riendo durante una sesion familiar en exteriores" width="600px" height="600px" loading="lazy">
+
+                        <figcaption class="pieza-info">
+                            <span class="pieza-titulo">Sesión Familiar</span>
+                            <span class="pieza-categoria">Retrato</span>
+                        </figcaption>
+                    </figure>
+                </div>
+
+            </section>
+
+            <!-- SECCIONES DE CATEGORIA -->
+            <section id="retrato" class="seccion">
+                <h2 class="seccion-titulo">Retrato</h2>
+                <p class="seccion-entrada">Sesiones individuales, familiares y de perfil profesional.</p>
+
+                <div class="rejilla-categoria">
+                    <figure class="pieza">
+                        <img src="recursos/g-01.jpg" alt="Retrato de una mujer junto a una ventana con luz natural" width="1200px" height="800px">
+
+                        <figcaption class="pieza-info">
+                            <span class="pieza-titulo">Luz Ventana
+                            </span>
+                        </figcaption>
+                    </figure>
+                </div>
+            </section>
         
     </main>
 
