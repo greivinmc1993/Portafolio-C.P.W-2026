@@ -82,6 +82,7 @@ section{
 hr{
     margin: 1rem auto;
     width: 80%;
+    box-shadow: 0px 0px 10px;
 }
 
 main nav ul{
@@ -160,10 +161,6 @@ footer{
     box-shadow: 0px 0px 10px;
 }
 
-.listas:hover{
-    transform: scale(1.03);
-}
-
 .logo{
     position: fixed;
     bottom: 30px;
@@ -201,6 +198,7 @@ fieldset{
     border-radius: 18px;
     margin-top: 20px;
     width: 100%;
+    box-shadow: 0px 0px 10px;
 }
 
 .boton{
