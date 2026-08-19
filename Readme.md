@@ -241,7 +241,7 @@ Portafolio-Codificación de Páginas Web/
         <tr>
             <th align="center">Sesión</th>
             <th align="center">Tema</th>
-            <th align="center" width="850px">Todo lo Qué Aprendí en Esta Sesión</th>
+            <th align="center" width="850px">Todo lo Qué Aprendí en Esta Sesión de Clase Sobre CSS</th>
             <th align="center">Trabajo</th>
             <th align="center">Captura</th>
         </tr>
