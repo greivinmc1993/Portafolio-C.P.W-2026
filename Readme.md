@@ -241,7 +241,7 @@ Portafolio-Codificación de Páginas Web/
         <tr>
             <th align="center">Sesión</th>
             <th align="center">Tema</th>
-            <th align="center" width="850px">Todo lo Qué Aprendí en Esta Sesión de Clase Sobre CSS</th>
+            <th align="center">Todo lo Qué Aprendí en Esta Sesión de Clase Sobre CSS</th>
             <th align="center">Trabajo</th>
             <th align="center">Captura</th>
         </tr>
@@ -314,7 +314,7 @@ Portafolio-Codificación de Páginas Web/
             <td>S20</td>
             <td>SCSS y repaso</td>
             <td align="left">Dato</td>
-            <td><a href="unidad-03/" target="_blank" rel="noopener">Ver</a></td>
+            <td><a href="https://padlet.com/embed/m55xyokangowggqd" target="_blank" rel="noopener">Ver</a></td>
             <td><a href="unidad-03/" target="_blank" rel="noopener">Ver</a></td>
         </tr>
     </tbody>
