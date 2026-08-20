@@ -1,0 +1,42 @@
+/* ESTUDIO LUZ CLARA */
+
+/* VARIABLES CSS */
+:root{
+    --color-tinta: #1a1a1a; /* para texto principal */
+    --color-suave: #6b6b6b; /* texto secundario */
+    --color-marca: #2c3e50; /* el azul del estudio */
+    --color-acento: #c87941; /* Botones */
+    --color-acento-osc: #a45f2e; /* Botones oscuros*/
+    --color-fondo: #fafaf8; /* Fondo*/
+    --color-fondo-alt: #f0eee9; /* Fondo alternativo*/
+    --color-linea: #dddad3; /* Color linea separadores*/
+    --color-blanco: #fff; /* Color blanco*/
+
+
+/* FUENTES Y TITULOS */
+    --fuente-titulo: Georgia, serif;
+    --fuente-texto: 'Segoe UI', Arial, sans-serif;
+
+/* ESPACIADO CONVERSION 1REM=10PX*/
+    --esp-xs: 0.8rem;
+    --esp-sm: 1.6rem;
+    --esp-md: 2.4rem;
+    --esp-lg: 4.0rem;
+    --esp-xl: 8.0rem;
+
+/* OTROS ELEMENTOS */
+    --radio: 0.6rem;
+    --sombra-1: 0 0.2rem 0.6rem rgba(0,0,0,0.6);/* APENAS SEPARADO */
+    --sombra-2: 0 0.4rem 1.2rem rgba(0,0,0,0.10);/* TARJETAS */
+    --sombra-3: 0 0.8rem 2.0rem rgba(0,0,0,0.16);/* ELEMENTOS ELEVADOS*/
+    --transition: all 0.25s ease;
+    --ancho-max: 120rem;
+}
+
+
+
+*{
+    padding: 0px;
+    margin: 0px;
+    box-sizing: border-box;
+}
