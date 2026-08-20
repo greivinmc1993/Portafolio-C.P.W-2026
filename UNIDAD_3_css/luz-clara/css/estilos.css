@@ -33,10 +33,69 @@
     --ancho-max: 120rem;
 }
 
-
-
 *{
     padding: 0px;
     margin: 0px;
-    box-sizing: border-box;
+    box-sizing: border-box; /* SIN ELLA LAS MEDIDAS DE UNA CAJA ES IGUAL A LA MEDIDA DE TODO (PADDING, MARGIN, BORDER) */
+}
+
+/* LA BASE DEL TAMAÑO */
+html{
+    font-size: 62.5%;
+    scroll-behavior: smooth;
+}
+
+body{
+    font-size: 1.6rem;
+    font-family: var(--fuente-texto);
+    line-height: 1.6;
+    color: var(--color-tinta);
+    background-color: var(--color-fondo);
+}
+
+/* JERARQUIA DE TITULOS */
+h1, h2, h3{
+    font-family: var(--fuente-titulo);
+    line-height: 1.2;
+    color: var(--color-marca);
+}
+
+h1{
+    font-size: 4.8rem;
+}
+
+h2{
+    font-size: 3.2rem;
+}
+
+h3{
+    font-size: 2.0rem;
+}
+
+p{
+    margin-bottom: var(--esp-sm);
+}
+
+a{
+    color: var(--color-acento);
+    text-decoration: none;
+}
+
+img{
+    max-width: 100%;
+    height: auto;
+    display: block;
+}
+
+/* CONTENEDORES Y SECCIONES */
+.seccion{
+    max-width: var(--ancho-max);
+    margin-left: auto;
+    margin-right: auto;
+    padding: var(--esp-xl) var(--esp-md);
+}
+
+.seccion-lterna{
+    background-color: var(--color-fondo-alt);
+    max-width: none;
 }
