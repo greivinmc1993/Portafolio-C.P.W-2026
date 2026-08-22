@@ -31,6 +31,10 @@
     --sombra-3: 0 0.8rem 2.0rem rgba(0,0,0,0.16);/* ELEMENTOS ELEVADOS*/
     --transition: all 0.25s ease;
     --ancho-max: 120rem;
+
+/* GRID FLEX*/
+    --grid: repeat(auto-fit, minmax(28rem, 1fr));/* Pon tantas columnas como quepan → mínimo 28rem → y reparte el espacio sobrante. */
+    --flex: flex: 1 1 32rem; /* "Quiero empezar en 32rem, puedo crecer si sobra espacio y puedo encogerme si falta espacio." */
 }
 
 *{
@@ -95,12 +99,12 @@ img{
     padding: var(--esp-xl) var(--esp-md);
 }
 
-.seccion-lterna{
+.seccion-alterna{
     background-color: var(--color-fondo-alt);
     max-width: none;
 }
 
-.seccion-lterna>*{
+.seccion-alterna>*{
     max-width: var(--ancho-max);
     margin-left: auto;
     margin-right: auto;
@@ -247,7 +251,7 @@ img{
     text-align: center;
     display: flex;
     flex-direction: column;
-    transition: transform var(--transicion), box-shadow var(--transicion);
+    transition: tranform var(--transicion), box-shadow var(--transicion);
 }
 .tarjeta-icono {
     color: var(--color-acento); margin: 0 auto;
@@ -314,7 +318,7 @@ img{
     font-size: 1.3rem;
     text-align: center;
     transform: translateY(100%);
-    transition: transform var(--transition);
+    transition: var(--transition)
 }
 
 .galeria-pieza:hover .galeria-pie{
@@ -393,4 +397,22 @@ img{
     color: var(--color-suave);
     text-align: center;
     font-style: italic;
+}
+
+.tarjeta:hover{
+    animation: resaltar 2s ease infinite ;
+    box-shadow: var(--sombra-3);
+    transition: all ease;
+}
+
+@keyframes resaltar{
+    0%{
+        transform: translateY(0px) ;
+    }
+    50%{
+        transform: translateY(-5px) ;
+    }
+    100%{
+        transform: translateY(0px) ;
+    }
 }
