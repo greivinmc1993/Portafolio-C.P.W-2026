@@ -47,7 +47,7 @@ thead th{
     text-transform: uppercase;
 }
 
-tbody tr td:hover, tbody th:hover, tfoot:hover, thead tr th:hover{
+tbody tr:hover td, tbody th:hover, tfoot:hover, thead tr th:hover{
     background-color: #6ac3de;
 }
 

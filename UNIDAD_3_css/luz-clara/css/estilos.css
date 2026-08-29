@@ -33,7 +33,7 @@
     --ancho-max: 120rem;
 
 /* GRID FLEX*/
-    --grid: repeat(auto-fit, minmax(28rem, 1fr));/* Pon tantas columnas como quepan → mínimo 28rem → y reparte el espacio sobrante. */
+    --grid: repeat(auto-fit, minmax(20rem, 1fr));/* Pon tantas columnas como quepan → mínimo 28rem → y reparte el espacio sobrante. */
     --flex: flex: 1 1 32rem; /* "Quiero empezar en 32rem, puedo crecer si sobra espacio y puedo encogerme si falta espacio." */
 }
 
@@ -303,7 +303,7 @@ img{
 }
 
 .galeria-pieza:hover img{
-    transform: scale(1.6);
+    transform: scale(1.2);
     filter: grayscale(0%);
 }
 
@@ -338,7 +338,27 @@ img{
     border-radius: var(--radio);
     box-shadow: var(--sombra-1);
     text-align: center;
-    transition: transform var(--transition), box-shadow var(--transition);
+    position: relative;
+    overflow: hidden;
+}
+
+.ficha-2{
+    position: absolute;
+    height: 100%;
+    transition: all 0.5s ease;
+    top: 0;
+    left: 0;
+    transform: translateX(-100%);
+}
+
+.ficha-2 img{
+    width: 100;
+    height: 100%;
+    border-radius: var(--radio);
+}
+
+.ficha:hover .ficha-2{
+    transform: translateX(0%);
 }
 
 .ficha-foto{
@@ -374,6 +394,7 @@ img{
     gap: var(--esp-lg);
     flex-wrap: wrap;
     align-items: flex-start;
+    justify-content: center;
 }
 
 .columna-text{
@@ -403,6 +424,73 @@ img{
     animation: resaltar 2s ease infinite ;
     box-shadow: var(--sombra-3);
     transition: all ease;
+}
+
+.tabla{
+    width: 100%;
+    border-collapse:collapse;
+    border-radius: 10px;
+    box-shadow: var(--sombra-3);
+}
+
+.pie-columnas{
+    display: flex;
+    flex-wrap: wrap;
+    flex: 1 1 32rem;
+    gap: var(--esp-xl);
+    justify-content: center;
+    border-top: 2px solid var(--color-fondo-alt);
+    padding: var(--esp-lg) 0;
+}
+
+.pie-bloque{
+    text-align: center;
+}
+
+.pie-creditos{
+    text-align: center;
+    border-top: 2px solid var(--color-fondo-alt);
+    padding: 2rem 0;
+    margin-top: 2rem;
+}
+
+.volver-arriba{
+    text-align: center;
+}
+
+.llamado{
+    text-align: center;
+}
+
+thead tr th{
+    text-transform: uppercase;
+    border: 2px solid var(--color-fondo-alt);
+    padding: var(--esp-sm);
+}
+
+td, th{
+    text-transform: uppercase;
+    border: 2px solid var(--color-fondo-alt);
+    padding: var(--esp-sm);
+    text-align: center;
+    padding: var(--esp-sm);
+}
+
+tr:nth-child(even) th, tr:nth-child(even) td:not(:first-child) {
+    background-color: var(--color-fondo-alt);
+}
+
+tfoot tr td{
+    text-transform: uppercase;
+}
+
+caption{
+    padding: var(--esp-lg);
+    color: var(--color-suave);
+}
+
+tr th[rowspan="2"]{
+    background-color: var(--color-fondo);
 }
 
 @keyframes resaltar{
