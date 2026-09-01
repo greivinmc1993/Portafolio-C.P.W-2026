@@ -462,6 +462,26 @@ img{
     text-align: center;
 }
 
+.rejilla-cifras{
+    display: grid;
+    grid-template-columns: var(--grid);
+    justify-items: center;
+    gap: var(--esp-md);
+}
+
+.cifra{
+    background-color: var(--color-fondo-alt);
+    border-top: 4px solid var(--color-acento);
+    padding:  1rem 4rem;
+    border-radius: var(--radio) var(--radio) 0px 0px;
+}
+
+.cifra-numero{
+    font-size: xx-large;
+    text-align: center;
+    font-weight: bolder;
+}
+
 thead tr th{
     text-transform: uppercase;
     border: 2px solid var(--color-fondo-alt);
