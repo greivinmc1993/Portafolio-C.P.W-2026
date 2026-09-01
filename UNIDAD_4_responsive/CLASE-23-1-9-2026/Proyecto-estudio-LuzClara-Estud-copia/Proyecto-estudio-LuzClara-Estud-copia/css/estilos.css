@@ -200,7 +200,7 @@ h1, h2, h3 {
   color: var(--color-marca);
 }
 
-h1 { font-size: 4.8rem; }   /* 48px */
+h1 { font-size: 4.2rem; }   /* 48px */
 h2 { font-size: 3.2rem; }   /* 32px */
 h3 { font-size: 2.0rem; }   /* 20px */
 /* OJO: Los tamaños guardan PROPORCIÓN entre sí: cada nivel es
@@ -1958,10 +1958,10 @@ img {
   }
 
   h1{
-    font-size: 3.2rem;
+    font-size: 3rem;
   }
   h2{
-    font-size: 2.4rem;
+    font-size: 2.0rem;
   }
 
   .seccion{
