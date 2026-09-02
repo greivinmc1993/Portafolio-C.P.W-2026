@@ -6,6 +6,13 @@
 
 html{
     scroll-behavior: smooth;
+    font-size: 62.5%;
+}
+
+img{
+    width: 100%;
+    height: auto;
+    display: block;
 }
 
 /*el 100% de tamaño de fuente indica al usuario configura por omision es de 16px*/
@@ -17,6 +24,10 @@ html{
     padding: 0px 50px 0px 50px;
     align-items: center;
     position: relative;
+}
+
+.header img{
+    width: 150px;
 }
 
 nav>ul {
@@ -322,3 +333,91 @@ input:focus:invalid:not(:placeholder-shown){
 input:focus:valid:not(:placeholder-shown){
     background-color: rgb(190, 250, 190);
 }
+
+
+/*ESCALA ESCRITORIO*/
+@media (width >= 1024px) {
+h1 { font-size: 4.8rem; }
+h2 { font-size: 3.2rem; }
+h3 { font-size: 2.0rem; }
+body { 
+    font-size: 1.6rem; 
+    max-width: 120rem;
+    padding: 3rem;
+    margin-left: auto;
+    margin-right: auto;
+}
+.listas{
+    max-width: 90rem;
+}
+}
+
+/*ESCALA TABLETS*/
+@media (width <= 768px ) {
+h1 { font-size: 4.0rem; }
+h2 { font-size: 2.8rem; }
+h3 { font-size: 1.9rem; }
+body { 
+    font-size: 1.6rem; 
+    max-width: 75rem;
+    padding: 3rem;
+    margin-left: auto;
+    margin-right: auto;
+}
+audio{
+    width: 80%;
+    height: 20%;
+}
+.item6{
+    padding: 1rem;
+}
+.item7{
+    padding: 1rem;
+}
+}
+
+/*BASE - TELEFONO*/
+@media (width <= 430px) {
+h1 { font-size: 1.2rem; }
+h2 { font-size: 2.4rem; }
+h3 { font-size: 1.8rem; }
+body { font-size: 1.6rem;
+    max-width: 42rem;
+    margin-left: auto;
+    margin-right: auto;
+}
+.header{
+    flex-direction: column;
+    margin-bottom: 3rem;
+}
+.listas{
+    text-align: center;
+}
+svg{
+    width: 250px;
+    height: 200px;
+}
+.item7{
+    padding: 1rem;
+}
+.grid{
+    width: 100%;
+}
+.item6 svg{
+    width: 100%;
+}
+.boton{
+    margin-bottom: 2rem;
+}
+#comparativa-herramientas{
+    width: 100%;
+    overflow-x: auto;
+}
+#comparativa-herramientas::-webkit-scrollbar{
+    height: 10px;
+    display: block;
+    background-color: #6ac3de;
+}
+}
+
+

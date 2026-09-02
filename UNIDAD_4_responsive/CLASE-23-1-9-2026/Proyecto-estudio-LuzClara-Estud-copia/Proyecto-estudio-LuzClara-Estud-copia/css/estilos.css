@@ -199,9 +199,9 @@ h1, h2, h3 {
      las dos líneas quedan muy separadas.                              */
   color: var(--color-marca);
 }
-
-h1 { font-size: 4.2rem; }   /* 48px */
-h2 { font-size: 3.2rem; }   /* 32px */
+/*Tamaños movil*/
+h1 { font-size: 3.2rem; }   /* 32px */
+h2 { font-size: 2.4rem; }   /* 24px */
 h3 { font-size: 2.0rem; }   /* 20px */
 /* OJO: Los tamaños guardan PROPORCIÓN entre sí: cada nivel es
    notoriamente más pequeño que el anterior. Elegir números al azar
@@ -250,7 +250,7 @@ img {
      contenedor: sin el max-width de arriba, auto no tendría nada
      que repartir.                                                     */
 
-  padding: var(--esp-xl) var(--esp-md);
+  padding: var(--esp-lg) var(--esp-sm);
   /* Dos valores: el primero es arriba y abajo, el segundo izquierda y
      derecha. El relleno lateral es lo que impide que el texto quede
      pegado al borde de la pantalla en un teléfono.                    */
@@ -321,10 +321,11 @@ img {
 
 .cabecera {
   display: flex;
+  flex-direction: column;
   /* OJO: ACTIVA FLEXBOX. Se declara en el CONTENEDOR, nunca en los hijos.
      Los hijos directos —el logo y la navegación— se convierten en
      "elementos flexibles" y se colocan en fila automáticamente.       */
-
+  gap: var(--esp-sm);
   justify-content: space-between;
   /* Controla el EJE PRINCIPAL, que con la dirección por omisión (fila)
      es el HORIZONTAL.
@@ -340,7 +341,7 @@ img {
      OJO: RECORDAR: si la dirección fuera  column, estos dos ejes se
        INTERCAMBIAN. Es la confusión más común de Flexbox.             */
 
-  padding: var(--esp-sm) var(--esp-md);
+  padding: var(--esp-sm);
   background-color: var(--color-blanco);
   border-bottom: 0.1rem solid var(--color-linea);
 
@@ -521,7 +522,7 @@ img {
      Esta capa oscura es lo que garantiza que el texto blanco se lea
      sobre una fotografía que puede tener zonas claras.                */
 
-  padding: var(--esp-lg);
+  padding: var(--esp-sm);
   border-radius: var(--radio);
   max-width: 70rem;   /* 700px */
 }
@@ -774,65 +775,60 @@ img {
 
 /* 8 · EQUIPO · CSS GRID           tema de la S17 */
 
-.rejilla-equipo{
-    display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(24rem, 1fr));
-    gap: var(--esp-md);
+.rejilla-equipo {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(24rem, 1fr));
+  gap: var(--esp-md);
+  /* La misma técnica de la galería, con una medida mínima menor
+     (240px) porque las fichas necesitan menos ancho.                  */
 }
 
-.ficha{
-    background-color: var(--color-blanco);
-    padding: var(--esp-md);
-    border-radius: var(--radio);
-    box-shadow: var(--sombra-1);
-    text-align: center;
-    position: relative;
-    overflow: hidden;
+.ficha {
+  background-color: var(--color-blanco);
+  padding: var(--esp-md);
+  border-radius: var(--radio);
+  box-shadow: var(--sombra-1);
+  text-align: center;
+  transition: transform var(--transicion), box-shadow var(--transicion);
 }
 
-.ficha-2{
-    position: absolute;
-    height: 100%;
-    transition: all 0.5s ease;
-    top: 0;
-    left: 0;
-    transform: translateX(-100%);
+.ficha-foto {
+  width: 14rem;    /* 140px */
+  height: 14rem;
+  object-fit: cover;
+  border-radius: 50%;
+  /* OJO: border-radius: 50% convierte un cuadrado en un CÍRCULO.
+     Solo funciona si el elemento es cuadrado: si midiera 140 × 100,
+     saldría un óvalo. Por eso el ancho y el alto son iguales.         */
+
+  margin: 0 auto var(--esp-sm);
+  border: 0.3rem solid var(--color-fondo-alt);
 }
 
-.ficha-2 img{
-    width: 100;
-    height: 100%;
-    border-radius: var(--radio);
+.ficha-nombre {
+  margin-bottom: 0.2rem;
 }
 
-.ficha:hover .ficha-2{
-    transform: translateX(0%);
+.ficha-rol {
+  color: var(--color-acento);
+  font-weight: 600;
+  font-size: 1.4rem;
+  text-transform: uppercase;
+  letter-spacing: 0.1rem;
+  /* OJO: text-transform cambia el texto a mayúsculas SIN tocar el HTML.
+     La ventaja frente a escribirlo en mayúsculas en el HTML: el texto
+     real sigue en minúsculas, así que un lector de pantalla lo lee
+     normal en vez de deletrearlo letra por letra.
+
+     OJO: letter-spacing MEJORA la legibilidad en mayúsculas; en
+       minúsculas casi siempre la empeora.                             */
+  margin-bottom: var(--esp-xs);
 }
 
-.ficha-foto{
-    width: 14rem;
-    height: 14rem;
-    object-fit: cover;
-    border-radius: 50%;
-    margin: 0 auto var(--esp-md);
-}
-
-.ficha-nombre{
-    margin-bottom: 0.2rem;
-}
-
-.ficha-rol{
-    color: var(--color-acento);
-    font-size: 1.4rem;
-    text-transform: uppercase;
-    letter-spacing: 0.1rem;
-    margin-bottom: var(--esp-xs);
-}
-
-.ficha-texto{
-    color: var(--color-suave);
-    font-size: 1.4rem;
-    margin-bottom: 0;
+.ficha-texto {
+  color: var(--color-suave);
+  font-size: 1.4rem;
+  margin-bottom: 0;
 }
 
 
@@ -933,7 +929,7 @@ img {
 .cita {
   max-width: 70rem;
   margin: 0 auto;
-  padding: var(--esp-lg);
+  padding: var(--esp-md);
   background-color: var(--color-blanco);
   border-left: 0.5rem solid var(--color-acento);
   /* Solo el borde IZQUIERDO. Es la forma clásica de marcar una cita:
@@ -1320,7 +1316,8 @@ img {
      animation   se ejecuta SOLA, sin que nadie haga nada              */
 
 /*  EFECTO DE ELEVACIÓN EN TARJETAS Y FICHAS  */
-.tarjeta:hover {
+.tarjeta:hover,
+.ficha:hover {
   transform: translateY(-0.6rem);
   box-shadow: var(--sombra-3);
   /* Dos cambios que van juntos: el elemento sube Y su sombra crece.
@@ -1949,22 +1946,123 @@ img {
      4. Recorrer el sitio con la tecla Tab: debe verse siempre dónde
         está el foco */
 
-
-@media(width < 768px){
-  .cabecera{
-    /* PASA DE FILA A COLUMNA EN MAIN*/
-    flex-direction: column;
+  /*Modalidad movil first*/
+@media (min-width: 768px) {
+  .cabecera {
+    flex-direction: row;
+    /*La cabecera de fila a columna*/
+    justify-content: space-between;
+    align-items: center;
     gap: var(--esp-md);
   }
+  h1 {font-size: 4.0rem;}
+  h2 {font-size: 2.8rem;}
 
-  h1{
-    font-size: 3rem;
+  .seccion {
+    padding: var(--esp-xl) var(--esp-md);
   }
-  h2{
-    font-size: 2.0rem;
+  .portada-caja {
+    padding: var(--esp-lg);
   }
+  .cita {
+    padding: var(--esp-lg);
+  }
+}
 
-  .seccion{
-    padding: var(--esp-lg) var(--esp-sm);
+/*a partir de los 1024px - vista escritorio*/
+@media (min-width: 1024px) {
+  h1 { font-size: 4.8rem; } /*h1 recupera el tamaño original*/
+
+  .portada { min-height: 55rem; } /*una portada con 50px de alto ocupa casi toda la pantalla de un celular*/
+
+  .seccion { padding: var(--esp-xl) var(--esp-lg); }
+}
+
+/*CUÁNTOS PUNTOS DE QUIEBRE HACEN FALTA
+Para Luz Clara basta con estos dos
+
+  base              hasta 767px             telefono
+  768px              tableta
+  1024px             escritorio*/
+
+  /*CÓMO SE ACUMULAN LAS REGLAS
+  en una pantalla de 1200px se aplican las TRES REGLAS:
+  1. La base 1200px
+  2. la de min-width: 768px (1200 es mayor que 768)
+  3. la de min-width: 1024px (1200 es mayor que 1024) 
+  Donde se repite una propiedad, gana la última.
+  Por eso el orden importa: de menor a mayor.
+  Si la de 1024 estuviera antes de las regla de 768, la última la anularía en pantallas grandes*/
+
+/*LA ESCLA COMPLETA, POR TRAMOS*/
+
+/*BASE - TELEFONO*/
+h1 { font-size: 3.2rem; }
+h2 { font-size: 2.4rem; }
+h3 { font-size: 1.8rem; }
+body { font-size: 1.6rem; }
+
+/*ESCALA TABLETS*/
+
+@media (min-width: 768px) {
+h1 { font-size: 4.0rem; }
+h2 { font-size: 2.8rem; }
+h3 { font-size: 1.9rem; }
+}
+
+/*ESCALA ESCRITORIO*/
+
+@media (min-width: 1024px) {
+h1 { font-size: 4.8rem; }
+h2 { font-size: 3.2rem; }
+h3 { font-size: 2.0rem; }
+}
+
+/*LA TABLA DE contacto.html*/
+.tabla-envoltorio { /*despues de lo 360px no hay forma razonable de que una tabla quepa sin perder la relacion entre los datos*/
+  overflow-x: auto;  /*crea su propia barra de desplazamiento*/
+}
+
+@media (max-width: 768px) { /*Se uas  max en luga de min porque em media query ataca la parte movil, e lajsute es solo para movil*/
+  .tabla th,
+  .tabla td {
+    padding: var(--esp-xs);
+    font-size: 1.4rem;
   }
-}  
+}
+
+@media (min-width:768px) {
+  main p { max-width: 65ch; }
+}
+/*en movil no hace falta adaptar texto de los párrafos, la pantalla lo hace. la adptación es pata de tablets hacia arriba por comodidad de lectura*/
+
+/* PUNTOS DE QUIEBRE
+base              hasta 767px             telefono
+  768px              tableta
+  1024px             escritorio*/
+
+  /*TABLETA . a partir de 768px
+  @media (min-width:768) {
+  cabecera e fila
+  títulos más grandes
+  más relleno en las secciones
+  }*/
+
+  /*ESCRITORIO . a partir de 1024px
+  @media (min-width:1024) {
+  títulos a tamaño completo
+  portada más alta
+  }*/
+
+  /*AJUSTES SOLO PARA PANTALLA PEQUEÑA
+  @media (max-width:768) {
+  celdas de la tabla mas compactas 
+  }*/
+
+/*ACCESIBILIDAD DEL MOVIMIENTO
+  @media (prefer-reduce-motion: reduce) {
+  Va siempre al final de todo. Desactivas las animaciones desde el so del disposito en uso. 
+  }*/
+
+  /*Estos encabezados NO son decorativos.
+  Quien abra esta hoja de estilos o usted mismo dentro de 6 meses sepat o tenga una idea de lo que se hizo y de la estrategia que se usó*/
