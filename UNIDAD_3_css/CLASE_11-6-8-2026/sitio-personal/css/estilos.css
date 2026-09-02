@@ -353,7 +353,7 @@ body {
 }
 
 /*ESCALA TABLETS*/
-@media (width <= 768px ) {
+@media (width <= 1024px ) and (width >= 431px) {
 h1 { font-size: 4.0rem; }
 h2 { font-size: 2.8rem; }
 h3 { font-size: 1.9rem; }
@@ -382,7 +382,7 @@ h1 { font-size: 1.2rem; }
 h2 { font-size: 2.4rem; }
 h3 { font-size: 1.8rem; }
 body { font-size: 1.6rem;
-    max-width: 42rem;
+    max-width: 40rem;
     margin-left: auto;
     margin-right: auto;
 }
@@ -392,6 +392,7 @@ body { font-size: 1.6rem;
 }
 .listas{
     text-align: center;
+    max-width: 90%;
 }
 svg{
     width: 250px;
@@ -406,6 +407,11 @@ svg{
 .item6 svg{
     width: 100%;
 }
+.item6 p{
+    height: 100px;
+    overflow-y: auto;
+}
+
 .boton{
     margin-bottom: 2rem;
 }
@@ -413,10 +419,12 @@ svg{
     width: 100%;
     overflow-x: auto;
 }
-#comparativa-herramientas::-webkit-scrollbar{
-    height: 10px;
-    display: block;
-    background-color: #6ac3de;
+.boton-menu a {
+    padding: 0.5rem;
+}
+audio{
+    width: 80%;
+    height: 20%;
 }
 }
 
