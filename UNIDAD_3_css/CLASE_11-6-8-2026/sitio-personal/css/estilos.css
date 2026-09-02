@@ -391,7 +391,6 @@ body { font-size: 1.6rem;
     margin-bottom: 3rem;
 }
 .listas{
-    text-align: center;
     max-width: 90%;
 }
 svg{
@@ -425,6 +424,15 @@ svg{
 audio{
     width: 80%;
     height: 20%;
+}
+aside p{
+    padding: 0 2rem;
+}
+footer{
+    padding: 0 1rem;
+}
+fieldset{
+    width: 100%;
 }
 }
 
