@@ -353,7 +353,7 @@ body {
 }
 
 /*ESCALA TABLETS*/
-@media (width <= 1024px ) and (width >= 431px) {
+@media (width <= 1024px ) and (width >= 430px) {
 h1 { font-size: 4.0rem; }
 h2 { font-size: 2.8rem; }
 h3 { font-size: 1.9rem; }

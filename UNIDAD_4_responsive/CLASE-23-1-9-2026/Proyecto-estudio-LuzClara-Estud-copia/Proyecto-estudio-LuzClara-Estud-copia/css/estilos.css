@@ -406,24 +406,74 @@ img {
      necesidad de reescribir nada.                                    */
 }
 
+/*LA BASE PARA MOVIL*/
 .menu {
   display: flex;
-  gap: var(--esp-sm);
+  flex-direction: column; /*en movil el menu vuelve a columnas*/
+  gap: 0;
   list-style: none;
   /* El menú es una LISTA por su significado —es un conjunto de
      enlaces del mismo nivel— pero no debe VERSE como lista. Por eso
      se quitan las viñetas con list-style.                             */
+  width: 100%;
+  display: none;
 }
 
+.menu-control {
+  position: absolute;
+  opacity: 0;
+  width: 0.1rem;
+  height: 0.1rem;
+}
+ /*EL BOTON DEL MENU HAMBURGUEZA*/
+.menu-boton {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: var(--esp-xs);
+  cursor: pointer;
+  padding: var(--esp-xs);
+}
+
+.menu-barra {
+  display: block;
+  width: 2.4rem;
+  height: 0.3rem;
+  background-color: var(--color-marca);
+  border-radius: 0.2rem; /*Las 3 barras del ícono dibujadas con css*/
+}
+.menu-barra + .menu-barra {
+  margin-top: 0.4rem;
+}
+
+.menu-texto {
+  font-size: 1.4rem;
+  font-weight: 600;
+  text-transform: uppercase;
+}
+
+/*Menu abierto cuando la casilla esta marcada*/
+.menu-control:checked ~ .menu {
+  display: flex;
+  flex-direction: column;
+}
+
+.menu-boton:focus-within {
+  outline: 0.2rem solid var(--color-acento);
+  outline-offset: 0.2rem;
+}
+
+
 .menu-enlace {
-  display: inline-block;
+  /*display: inline-block;*/
   /* OJO: IMPRESCINDIBLE.
      Un enlace es "inline" por omisión, y los elementos inline IGNORAN
      el relleno vertical. Sin esta línea, el padding de arriba y abajo
      de la regla siguiente no haría ningún efecto y el área para hacer
      clic quedaría del alto exacto del texto.                          */
-
-  padding: var(--esp-xs) var(--esp-sm);
+    
+  display: block; /*ocupa todo el ancho disponible y el área para tocar es mayor*/
+  padding: var(--esp-sm);
   /* Amplía el ÁREA PULSABLE. No es decorativo: un enlace pequeño es
      difícil de acertar con el dedo en un teléfono.                    */
 
@@ -434,6 +484,8 @@ img {
   /* OJO: La transición va en la regla BASE, no dentro de :hover.
      Si se pusiera en :hover, la entrada sería suave pero la salida
      brusca: al quitar el cursor el color volvería de golpe.           */
+  border-bottom: 0.1rem solid var(--color-linea);
+  text-align: center;
 }
 
 .menu-enlace:hover {
@@ -2066,3 +2118,72 @@ base              hasta 767px             telefono
 
   /*Estos encabezados NO son decorativos.
   Quien abra esta hoja de estilos o usted mismo dentro de 6 meses sepat o tenga una idea de lo que se hizo y de la estrategia que se usó*/
+
+/*Media querie para panttalla grande*/
+  @media (min-width: 768px) {
+    .cabecera {
+      flex-direction: row;
+      justify-content: space-between;
+      align-items: center;
+    }
+    .menu {
+      flex-direction: row;
+      gap: var(--esp-sm);
+      width: auto;
+    }
+    .menu-enlace {
+      display: inline-block;
+      padding: var(--esp-xs) var(--esp-sm);
+      border-bottom: none;
+      border-radius: var(--radio);
+    }
+  }
+
+  @media (min-width: 768px){
+    .menu-boton{
+      display: none;
+    }
+    .menu{
+      display: flex;
+      flex-direction: row;
+    }
+  }
+
+  @media(orientation: landscape) and (max-width: 500px){
+    .portada{
+      min-height: 100vh;
+      padding: var(--esp-md);
+    }
+    .portada-titulo{
+      font-size: 2.4rem;
+    }
+    .portada-bajada{
+      font-size: 1.5rem;
+    }
+  }
+
+@media print {
+  /* QUITAR LO QUE NO NOS SIRVE AL IMPIRMIR */
+  .cabecera{display: none;}
+  .menu-boton{display: none;}
+  .pie{display: none;}
+  .boton{display: none;}
+  .volver-arriba{display: none;}
+  .fila-etiquetas{display: none;}
+  body{
+    background-color: var(--color-blanco);
+  }
+  .table, .tarjeta, figure{
+    page-break-inside: avoid;
+  }
+  h1, h2, h3{
+    page-break-after: avoid;
+  }
+
+  /* MOSTRAR ENLACES */
+  main a[href^="http"]::after{
+    content: "(" attr(href)")";
+    font-size: 9pt;
+    color: #555;
+  }
+}

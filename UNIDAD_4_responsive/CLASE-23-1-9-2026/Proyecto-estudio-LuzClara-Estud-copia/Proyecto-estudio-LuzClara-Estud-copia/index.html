@@ -22,8 +22,8 @@
     <a href="index.html" class="logo">
       <!-- LOGO EN SVG · dibujado con código, no es una imagen -->
       <svg class="logo-icono" width="38" height="38" viewBox="0 0 38 38"
-          xmlns="http://www.w3.org/2000/svg" role="img"
-          aria-label="Logo del Estudio Luz Clara: una cámara fotográfica">
+           xmlns="http://www.w3.org/2000/svg" role="img"
+           aria-label="Logo del Estudio Luz Clara: una cámara fotográfica">
         <rect x="2" y="9" width="34" height="25" rx="4" fill="currentColor"/>
         <rect x="12" y="4" width="14" height="6" rx="2" fill="currentColor"/>
         <circle cx="19" cy="22" r="8" fill="#FFFFFF"/>
@@ -34,6 +34,15 @@
     </a>
 
     <nav class="navegacion" aria-label="Navegación principal">
+      <!--MENU HAMBURGUEZA-->
+      <input type="checkbox" id="abrir-menu" class="menu-control">
+      <label for="abrir-menu" class="menu-boton">
+        <span class="menu-barra"></span>
+        <span class="menu-barra"></span>
+        <span class="menu-barra"></span>
+        <span class="menu-texto">Menú</span>
+      </label>
+      <!--CIERRE MENU HAMBURGUEZA-->
       <ul class="menu">
         <li><a href="index.html" class="menu-enlace activo">Inicio</a></li>
         <li><a href="galeria.html" class="menu-enlace">Galería</a></li>
@@ -49,9 +58,9 @@
     <!-- PORTADA · aquí se practica el fondo y la superposición -->
     <section id="portada" class="portada">
       <!--  MARCADOR DE IMAGEN
-          La imagen de fondo se aplica desde el CSS, en la regla .portada
-          Coloque en:  recursos/portada.jpg
-          Recomendado: 1600 × 900 px, horizontal, con zonas oscuras -->
+           La imagen de fondo se aplica desde el CSS, en la regla .portada
+           Coloque en:  recursos/portada.jpg
+           Recomendado: 1600 × 900 px, horizontal, con zonas oscuras -->
 
       <div class="portada-caja">
         <h1 class="portada-titulo">La luz cuenta la historia</h1>
