@@ -414,8 +414,8 @@ img {
   margin: 0;
   list-style: none;
   background-color: white;
-  transition: all 0.5s ease;
   overflow: hidden;
+  transition: width 0.5s ease, box-shadow 0.5s;
 }
 
 .menu-control {
@@ -2068,6 +2068,18 @@ h3 { font-size: 1.9rem; }
 h1 { font-size: 4.8rem; }
 h2 { font-size: 3.2rem; }
 h3 { font-size: 2.0rem; }
+.cabecera{
+  display: flex;
+  position: static;
+}
+.menu{
+  position: static;
+  }
+.menu-control:checked ~ .menu {
+  width: 100%;
+  padding: 0px;
+  box-shadow: none;
+}
 }
 
 /*LA TABLA DE contacto.html*/
@@ -2137,6 +2149,19 @@ base              hasta 767px             telefono
       border-bottom: none;
       border-radius: var(--radio);
     }
+
+    .cabecera{
+  display: flex;
+  position: static;
+}
+.menu{
+  position: static;
+  }
+.menu-control:checked ~ .menu {
+  width: 100%;
+  padding: 0px;
+  box-shadow: none;
+}
   }
 
   @media (min-width: 768px){
