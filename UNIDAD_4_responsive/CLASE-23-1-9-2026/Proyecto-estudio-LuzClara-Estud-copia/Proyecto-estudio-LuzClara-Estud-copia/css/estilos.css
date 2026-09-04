@@ -321,7 +321,7 @@ img {
 
 .cabecera {
   display: flex;
-  flex-direction: column;
+  flex-direction: row;
   /* OJO: ACTIVA FLEXBOX. Se declara en el CONTENEDOR, nunca en los hijos.
      Los hijos directos —el logo y la navegación— se convierten en
      "elementos flexibles" y se colocan en fila automáticamente.       */
@@ -406,16 +406,23 @@ img {
      necesidad de reescribir nada.                                    */
 }
 
-/*LA BASE PARA MOVIL*/
 .menu {
   display: flex;
   flex-direction: column; /*en movil el menu vuelve a columnas*/
   gap: 0;
   list-style: none;
+  position: absolute;
   /* El menú es una LISTA por su significado —es un conjunto de
      enlaces del mismo nivel— pero no debe VERSE como lista. Por eso
      se quitan las viñetas con list-style.                             */
-  width: 100%;
+  transform: translateX(20rem);
+  background-color: var(--color-fondo-alt);
+  right: 0;
+  top: 8.2rem;
+  padding: 0 5rem;
+  height: 65rem;
+  box-shadow: 0 0 0 100vmax rgba(0, 0, 0, 0.45);
+  transition: all 0.5s ease;
   display: none;
 }
 
@@ -456,6 +463,7 @@ img {
 .menu-control:checked ~ .menu {
   display: flex;
   flex-direction: column;
+  transform: translateX(0);
 }
 
 .menu-boton:focus-within {
