@@ -334,6 +334,12 @@ input:focus:valid:not(:placeholder-shown){
     background-color: rgb(190, 250, 190);
 }
 
+.check{
+    display: none;
+}
+.check-label{
+    display: none;
+}
 
 /*ESCALA ESCRITORIO*/
 @media (width >= 1024px) {
@@ -353,7 +359,7 @@ body {
 }
 
 /*ESCALA TABLETS*/
-@media (width <= 1024px ) and (width >= 430px) {
+@media (width <= 1023px ) and (width >= 431px) {
 h1 { font-size: 4.0rem; }
 h2 { font-size: 2.8rem; }
 h3 { font-size: 1.9rem; }
@@ -374,6 +380,12 @@ audio{
 .item7{
     padding: 1rem;
 }
+.check{
+    display: none;
+}
+.check-label{
+    display: none;
+}
 }
 
 /*BASE - TELEFONO*/
@@ -393,10 +405,10 @@ body { font-size: 1.6rem;
 .listas{
     max-width: 90%;
 }
-svg{
+/* svg{
     width: 250px;
     height: 200px;
-}
+} */
 .item7{
     padding: 1rem;
 }
@@ -434,6 +446,45 @@ footer{
 fieldset{
     width: 100%;
 }
+.check{
+    display: none;
+}
+.check-label{
+    cursor: pointer;
+    display: block;
+}
+.sub-menu{
+    flex-direction: column;
+    position: absolute;
+    right: 0;
+    top: 100%;
+    height: 0px;
+    background-color: rgb(35 39 47);
+    width: 100%;
+    justify-content: start;
+    gap: 2rem;
+    overflow: hidden;
+    transition: height 0.5s ease, box-shadow 0.5s;
+    padding-top: 3rem;
+    border-radius: 1rem 0px 0px 1rem;
+}
+
+nav a{
+    font-size: larger;
+
+}
+.header{
+    position: relative;
+    flex-direction: row;
+}
+.check:checked ~ .sub-menu{
+
+    height: 92rem;
+    box-shadow: 0 0 0 100vmax rgba(0, 0, 0, 0.5);
+    z-index: 100;
+}
+
+
 }
 
 
