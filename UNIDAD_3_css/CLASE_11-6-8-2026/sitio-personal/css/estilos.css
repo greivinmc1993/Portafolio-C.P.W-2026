@@ -466,7 +466,7 @@ fieldset{
     overflow: hidden;
     transition: height 0.5s ease, box-shadow 0.5s;
     padding-top: 3rem;
-    border-radius: 1rem 0px 0px 1rem;
+    border-radius: 1rem;
 }
 
 nav a{
